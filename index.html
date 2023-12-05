@@ -7,62 +7,80 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>GRAN Time Tracker</title>
+
+    <style>
+
+    </style>
 </head>
 <body class="container mx-auto">
 <header class="mb-10">
-    <nav class="flex flex-row justify-between">
-        <div class="bg-amber-100 flex flex-row items-center">
+    <nav class="flex flex-row justify-between px-10">
+        <div class=" flex flex-row items-center">
             CHRONO
         </div>
-        <ul class="flex flex-row gap-4 justify-end h-[80px] items-center bg-amber-100">
-            <li><a href="#features">Features</a></li>
-            <li><a href="http://app.tracker.gransoftware.de/signup" target="_blank">Sign up</a></li>
+        <ul class="flex flex-row gap-4 justify-end h-[80px] items-center">
+            <li class="opacity-50 hover:opacity-75 hover:bg-[#ffcfbf] rounded-2xl p-2"><a href="#features">Features</a>
+            </li>
+            <li class="opacity-75 bg-[#ffcfbf] rounded-2xl p-2"><a href="http://app.tracker.gransoftware.de/signup"
+                                                                   target="_blank">Sign up</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="hero" class="h-[450px] bg-amber-100 mb-10">
-    <div class="prose p-10">
-        <h1>Time tracking for programmers</h1>
-        <p>
-            Track your time like a software developer. Use the power of ctrl+k to accomplish all time-tracking related
-            tasks
-        </p>
+<section id="hero" class="h-[400px] mb-60 flex justify-center">
+    <div class="prose-2xl px-10 text-center w-2/3">
+        <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
+        <h1 style="margin-bottom: 0.2em">Track your time <span class="blur-sm hover:blur-none cursor-none">🕑</span> like
+            a Software Developer</h1>
+        Use keybindings you know from your IDEs, intuitive widgets, quick actions and smart autocomplete to reduce time
+        spent timesheeting.
+        <!-- ff5e29 -->
+        <div class="halftone mt-20 drop-shadow-xl h-[200px] rounded-2xl p-5 mx-20 bg-gradient-to-b from-[#ffcfbf] to-[#ffa487] flex items-center justify-center relative">
+            <form class="p-2 rounded-xl rotate-1 bg-white skew-x-3 w-6/7 absolute hover:outline outline-offset-0 outline-4 outline-[#ff7d52]"
+                  style="bottom: -20px">
+                <input class="p-2 py-4 outline-none rounded-2xl" type="text" placeholder="Your email address"/>
+                <button type="submit"
+                        class="px-4 py-4 rounded-xl text-white bg-[#ff5e29] animate-wiggle animate-infinite">Get Started
+                </button>
+            </form>
+        </div>
     </div>
 </section>
 
-<section id="features" class="mb-10 bg-amber-100 grid grid-rows-8 grid-flow-row gap-10 p-10">
-    <div class="flex flex-row justify-between">
-        <div class="prose">
+<section id="features" class="mb-10 grid grid-rows-8 grid-flow-row gap-40 p-10">
+    <div class="flex flex-col justify-between gap-10">
+        <div class="w-full h-[500px] bg-no-repeat bg-center bg-contain" style="background-image: url('assets/list.png')"></div>
+
+        <div class="prose-xl">
             <h2>Convenient List and The Timeline View</h2>
             <p>
-                A traditional list-view allows for a quick overview of the period you are interested in. Additionally it
+                <span class="font-bold">The Traditional List-View</span> allows for a quick overview of the period you
+                are interested in. Additionally it
                 allows you to easily continue any existing task, edit or delete it, or move to another day using a
                 calendar.
             </p>
+        </div>
 
-            <p>
-                The new Timeline View allows you to safely modify a timesheet without overlapping hours. Using only your
-                mouse you can easily modify and move entries around. The Overlap-Guard feature makes sure your day will
-                be
-                fully filled without errors.
-            </p>
-        </div>
-        <div>
-            PICTURE
-        </div>
+        <div class="w-full h-[200px] bg-no-repeat bg-center" style="background-image: url('assets/timeline.png')"></div>
+        <p class="prose-lg place-self-end">
+            <span class="font-bold">The new Timeline View</span> allows you to safely modify a timesheet without
+            overlapping hours. Using only your
+            mouse you can easily modify and move entries around. The Overlap-Guard feature makes sure your day will
+            be
+            fully filled without errors.
+        </p>
     </div>
 
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between  gap-10">
         <div>PICTURE</div>
-        <div class="prose">
+        <div class="prose-lg">
             <h2>Smart Autocomplete</h2>
             <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
         </div>
     </div>
 
-    <div class="flex flex-row justify-between">
-        <div class="prose">
+    <div class="flex flex-row justify-between  gap-10">
+        <div class="prose-lg">
             <h2>Parallel Tracking</h2>
             <p>Use your time more efficiently with an instant overview of all running trackers. You can quickly browse,
                 discard or finish tasks without even changing your current context.</p>
@@ -70,9 +88,9 @@
         <div>PICTURE</div>
     </div>
 
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between  gap-10">
         <div>PICTURE</div>
-        <div class="prose">
+        <div class="prose-lg">
             <h2>Quick Stats</h2>
             <p>Your favourite statistics are always available. Just open up the drawer by clicking, or pressing the
                 hotkey
@@ -80,8 +98,8 @@
         </div>
     </div>
 
-    <div class="flex flex-row justify-between">
-        <div class="prose">
+    <div class="flex flex-row justify-between  gap-10">
+        <div class="prose-lg">
             <h2>Quick Actions</h2>
             <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
                 accomplish
@@ -91,9 +109,9 @@
         <div>PICTURE</div>
     </div>
 
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between  gap-10">
         <div>PICTURE</div>
-        <div class="prose">
+        <div class="prose-lg">
             <h2>Hotkeys</h2>
             <p>Blend in hotkeys with your alt key and navigate the app without moving your mouse. Imagine alt-tabbing
                 from
@@ -102,8 +120,8 @@
         </div>
     </div>
 
-    <div class="flex flex-row justify-between">
-        <div class="prose">
+    <div class="flex flex-row justify-between  gap-10">
+        <div class="prose-lg">
             <h2>Powerful Timesheet Editing</h2>
             <p>Before you export your timesheet for approval, it’s always good to check it up again and see if you
                 missed
@@ -121,7 +139,7 @@
 
     <div class="flex flex-row justify-between">
         <div>PICTURE</div>
-        <div class="prose">
+        <div class="prose-lg">
             <h2>Email reminders</h2>
             <p>
                 Avoid unnecessarily spending time on correcting silly errors. Turn on Email notifications to be reminded
@@ -132,9 +150,10 @@
     </div>
 </section>
 
-<section id="newsletter" class="mb-10 bg-amber-100 p-10 text-center flex justify-center">
+<section id="newsletter" class="mb-10  p-10 text-center flex justify-center">
     <div class="prose">
-        Currently we are in the Alpha stage. If you prefer to use more stable software, then I invite you to the Newsletter.
+        Currently we are in the Alpha stage. If you prefer to use more stable software, then I invite you to the
+        Newsletter.
         You will be notified about all updates regarding the development and roadmaps.
 
         <form>
@@ -147,9 +166,10 @@
     </div>
 </section>
 
-<section id="CTA" class="mb-10 bg-amber-100 p-10 text-center flex justify-center">
+<section id="CTA" class="mb-10  p-10 text-center flex justify-center">
     <div class="prose">
-        <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now. Become a part
+        <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now. Become
+            a part
             of the community and shape the future of how software developers track their time.</p>
 
         <a href="http://app.tracker.gransoftware.de/signup" target="_blank">Sign up today!</a>
@@ -157,7 +177,7 @@
 
 </section>
 
-<footer class="bg-amber-100 h-[80px]">
+<footer class=" h-[80px]">
     <ul class="flex flex-row gap-4 text-sm justify-end items-center h-full">
         <li><a href="http://app.tracker.gransoftware.de/impressum" target="_blank">Impressum</a></li>
         <li><a href="http://app.tracker.gransoftware.de/agb" target="_blank">AGB</a></li>
