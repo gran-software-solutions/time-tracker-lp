@@ -9,180 +9,209 @@
     <title>GRAN Time Tracker</title>
 
     <style>
+        .pulse {
+            transform-origin: center;
+            animation: pulse-animation 2s infinite;
+        }
 
+        @keyframes pulse-animation {
+            0% {
+                width: 1290px;
+                height: 1290px;
+            }
+            50% {
+                width: 1300px;
+                height: 1300px;
+            }
+            100% {
+                width: 1290px;
+                height: 1290px;
+            }
+        }
     </style>
 </head>
-<body class="container mx-auto">
-<header class="mb-10">
-    <nav class="flex flex-row justify-between px-10">
-        <div class=" flex flex-row items-center">
-            CHRONO
-        </div>
-        <ul class="flex flex-row gap-4 justify-end h-[80px] items-center">
-            <li class="opacity-50 hover:opacity-75 hover:bg-[#ffcfbf] rounded-2xl p-2"><a href="#features">Features</a>
-            </li>
-            <li class="opacity-75 bg-[#ffcfbf] rounded-2xl p-2"><a href="http://app.tracker.gransoftware.de/signup"
-                                                                   target="_blank">Sign up</a></li>
-        </ul>
-    </nav>
-</header>
+<body class="mx-auto w-screen h-screen">
+<div class="explosion bg-no-repeat bg-contain bg-top w-fulll h-full absolute top-[380px] blur" style="z-index:-100; background-image: url('/assets/explo1.jpeg')"></div>
 
-<section id="hero" class="h-[400px] mb-60 flex justify-center">
-    <div class="prose-2xl px-10 text-center w-2/3">
-        <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
-        <h1 style="margin-bottom: 0.2em">Track your time <span class="blur-sm hover:blur-none cursor-none">🕑</span> like
-            a Software Developer</h1>
-        Use keybindings you know from your IDEs, intuitive widgets, quick actions and smart autocomplete to reduce time
-        spent timesheeting.
-        <!-- ff5e29 -->
-        <div class="halftone mt-20 drop-shadow-xl h-[200px] rounded-2xl p-5 mx-20 bg-gradient-to-b from-[#ffcfbf] to-[#ffa487] flex items-center justify-center relative">
-            <form class="p-2 rounded-xl rotate-1 bg-white skew-x-3 w-6/7 absolute hover:outline outline-offset-0 outline-4 outline-[#ff7d52]"
-                  style="bottom: -20px">
-                <input class="p-2 py-4 outline-none rounded-2xl" type="text" placeholder="Your email address"/>
-                <button type="submit"
-                        class="px-4 py-4 rounded-xl text-white bg-[#ff5e29] animate-wiggle animate-infinite">Get Started
-                </button>
+<div class="container mx-auto">
+
+    <header class="mb-10">
+        <nav class="flex flex-row justify-between px-2 md:px-10">
+            <div class=" flex flex-row items-center">
+                CHRONO
+            </div>
+            <ul class="flex flex-row gap-4 justify-end h-[80px] items-center">
+                <li class="opacity-50 hover:opacity-75 hover:bg-[#ffcfbf] rounded-2xl p-2"><a href="#features">Features</a>
+                </li>
+                <li class="opacity-75 bg-[#ffcfbf] rounded-2xl p-2"><a href="http://app.tracker.gransoftware.de/signup"
+                                                                       target="_blank">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="hero" class="h-[400px] mb-60 flex justify-center ">
+        <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 md:px-10 text-center w-2/3">
+            <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
+            <h1 style="margin-bottom: 0.2em">Track your time <span class="blur-sm hover:blur-none cursor-none">🕑</span> like
+                a Software Developer</h1>
+            Use keybindings you know from your IDEs, intuitive widgets, quick actions and smart autocomplete to reduce time
+            spent timesheeting.
+
+            <!-- ff5e29 -->
+
+            <div class="mt-20 p-5 mx-auto drop-shadow-xl sm:w-full lg:w-[480px] xl:w-[570px] md:h-[150px] xl:h-[150px] lg:h-[155px] rounded-2xl bg-gradient-to-b from-[#ffcfbf] to-[#ffa487] flex items-center justify-center relative">
+                <form class="p-2 rounded-xl rotate-1 bg-white skew-x-3 hover:outline outline-offset-0 outline-4 outline-[#ff7d52]"
+                      style="bottom: -20px">
+                    <input class="text-center sm:text-left p-2 py-4 outline-none w-[220px] lg:w-[250px] xl:w-[300px] rounded-2xl" type="text" placeholder="Your email address"/>
+                    <button type="submit"
+                            class="px-4 py-4 rounded-xl text-white bg-[#ff5e29] animate-wiggle animate-infinite">Get Started
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features" class="mb-10 grid grid-rows-8 grid-flow-row gap-40 px-2 md:px-10">
+        <div class="mx-auto border-2 border-[#ffcfbf] rounded-2xl xl:w-[1196px] lg:w-[945px] md:w-[645px] drop-shadow-xl">
+            <div class="xl:h-[501px] lg:h-[396px] md:h-[296px] bg-no-repeat bg-center bg-contain rounded-2xl" style="background-image: url('assets/tracking-page.png')"></div>
+        </div>
+
+        <div class="flex flex-col justify-between gap-20 rounded-2xl pt-10 bg-gradient-to-t from-white">
+            <div class="prose">
+                <h2>Convenient List and The Timeline View</h2>
+                <p>
+                    <span class="font-bold">The Traditional List-View</span> allows for a quick overview of the period you
+                    are interested in. Additionally it
+                    allows you to easily continue any existing task, edit or delete it, or move to another day using a
+                    calendar.
+                </p>
+            </div>
+
+            <div class="w-full h-[200px] bg-no-repeat bg-center" style="background-image: url('assets/timeline.png')"></div>
+            <p class="prose place-self-end">
+                <span class="font-bold">The new Timeline View</span> allows you to safely modify a timesheet without
+                overlapping hours. Using only your
+                mouse you can easily modify and move entries around. The Overlap-Guard feature makes sure your day will
+                be
+                fully filled without errors.
+            </p>
+
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div>PICTURE</div>
+            <div class="prose-lg">
+                <h2>Smart Autocomplete</h2>
+                <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div class="prose-lg">
+                <h2>Parallel Tracking</h2>
+                <p>Use your time more efficiently with an instant overview of all running trackers. You can quickly browse,
+                    discard or finish tasks without even changing your current context.</p>
+            </div>
+            <div>PICTURE</div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div>PICTURE</div>
+            <div class="prose-lg">
+                <h2>Quick Stats</h2>
+                <p>Your favourite statistics are always available. Just open up the drawer by clicking, or pressing the
+                    hotkey
+                    if you don’t like using mouse.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div class="prose-lg">
+                <h2>Quick Actions</h2>
+                <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
+                    accomplish
+                    anything without a single click. Manage your trackers, change views, export timesheets, even sign
+                    out.</p>
+            </div>
+            <div>PICTURE</div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div>PICTURE</div>
+            <div class="prose-lg">
+                <h2>Hotkeys</h2>
+                <p>Blend in hotkeys with your alt key and navigate the app without moving your mouse. Imagine alt-tabbing
+                    from
+                    your IDE to your browser, then pressing a combo of hotkeys to quickly set up your tracker for a new
+                    task.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-10">
+            <div class="prose-lg">
+                <h2>Powerful Timesheet Editing</h2>
+                <p>Before you export your timesheet for approval, it’s always good to check it up again and see if you
+                    missed
+                    something. There are various ways to retrospectively edit your timesheet.</p>
+
+                <p>
+                    You can use the Timeline View and simply drag blocks of time on it, or go to the list view and change
+                    your
+                    entries with a precision of a minute. You can always add entries manually for any day using the
+                    calendar.
+                </p>
+            </div>
+            <div>PICTURE</div>
+        </div>
+
+        <div class="flex flex-row justify-between">
+            <div>PICTURE</div>
+            <div class="prose-lg">
+                <h2>Email reminders</h2>
+                <p>
+                    Avoid unnecessarily spending time on correcting silly errors. Turn on Email notifications to be reminded
+                    if
+                    a tracker runs for too long.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="mb-10 px-2 md:px-10 text-center flex justify-center">
+        <div class="prose">
+            Currently we are in the Alpha stage. If you prefer to use more stable software, then I invite you to the
+            Newsletter.
+            You will be notified about all updates regarding the development and roadmaps.
+
+            <form>
+                <label>
+                    Email:
+                    <input type="text" placeholder="e.g. john@doe.com"/>
+                </label>
+                <button type="submit">Send me the Newsletter!</button>
             </form>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="features" class="mb-10 grid grid-rows-8 grid-flow-row gap-40 p-10">
-    <div class="flex flex-col justify-between gap-20">
-        <div class="w-full h-[500px] bg-no-repeat bg-center bg-contain" style="background-image: url('assets/list.png')"></div>
-
+    <section id="CTA" class="mb-10 px-2 md:px-10 text-center flex justify-center">
         <div class="prose">
-            <h2>Convenient List and The Timeline View</h2>
-            <p>
-                <span class="font-bold">The Traditional List-View</span> allows for a quick overview of the period you
-                are interested in. Additionally it
-                allows you to easily continue any existing task, edit or delete it, or move to another day using a
-                calendar.
-            </p>
+            <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now. Become
+                a part
+                of the community and shape the future of how software developers track their time.</p>
+
+            <a href="http://app.tracker.gransoftware.de/signup" target="_blank">Sign up today!</a>
         </div>
+    </section>
 
-        <div class="w-full h-[200px] bg-no-repeat bg-center" style="background-image: url('assets/timeline.png')"></div>
-        <p class="prose place-self-end">
-            <span class="font-bold">The new Timeline View</span> allows you to safely modify a timesheet without
-            overlapping hours. Using only your
-            mouse you can easily modify and move entries around. The Overlap-Guard feature makes sure your day will
-            be
-            fully filled without errors.
-        </p>
 
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div>PICTURE</div>
-        <div class="prose-lg">
-            <h2>Smart Autocomplete</h2>
-            <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
-        </div>
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div class="prose-lg">
-            <h2>Parallel Tracking</h2>
-            <p>Use your time more efficiently with an instant overview of all running trackers. You can quickly browse,
-                discard or finish tasks without even changing your current context.</p>
-        </div>
-        <div>PICTURE</div>
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div>PICTURE</div>
-        <div class="prose-lg">
-            <h2>Quick Stats</h2>
-            <p>Your favourite statistics are always available. Just open up the drawer by clicking, or pressing the
-                hotkey
-                if you don’t like using mouse.</p>
-        </div>
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div class="prose-lg">
-            <h2>Quick Actions</h2>
-            <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
-                accomplish
-                anything without a single click. Manage your trackers, change views, export timesheets, even sign
-                out.</p>
-        </div>
-        <div>PICTURE</div>
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div>PICTURE</div>
-        <div class="prose-lg">
-            <h2>Hotkeys</h2>
-            <p>Blend in hotkeys with your alt key and navigate the app without moving your mouse. Imagine alt-tabbing
-                from
-                your IDE to your browser, then pressing a combo of hotkeys to quickly set up your tracker for a new
-                task.</p>
-        </div>
-    </div>
-
-    <div class="flex flex-row justify-between  gap-10">
-        <div class="prose-lg">
-            <h2>Powerful Timesheet Editing</h2>
-            <p>Before you export your timesheet for approval, it’s always good to check it up again and see if you
-                missed
-                something. There are various ways to retrospectively edit your timesheet.</p>
-
-            <p>
-                You can use the Timeline View and simply drag blocks of time on it, or go to the list view and change
-                your
-                entries with a precision of a minute. You can always add entries manually for any day using the
-                calendar.
-            </p>
-        </div>
-        <div>PICTURE</div>
-    </div>
-
-    <div class="flex flex-row justify-between">
-        <div>PICTURE</div>
-        <div class="prose-lg">
-            <h2>Email reminders</h2>
-            <p>
-                Avoid unnecessarily spending time on correcting silly errors. Turn on Email notifications to be reminded
-                if
-                a tracker runs for too long.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="newsletter" class="mb-10  p-10 text-center flex justify-center">
-    <div class="prose">
-        Currently we are in the Alpha stage. If you prefer to use more stable software, then I invite you to the
-        Newsletter.
-        You will be notified about all updates regarding the development and roadmaps.
-
-        <form>
-            <label>
-                Email:
-                <input type="text" placeholder="e.g. john@doe.com"/>
-            </label>
-            <button type="submit">Send me the Newsletter!</button>
-        </form>
-    </div>
-</section>
-
-<section id="CTA" class="mb-10  p-10 text-center flex justify-center">
-    <div class="prose">
-        <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now. Become
-            a part
-            of the community and shape the future of how software developers track their time.</p>
-
-        <a href="http://app.tracker.gransoftware.de/signup" target="_blank">Sign up today!</a>
-    </div>
-
-</section>
-
-<footer class=" h-[80px]">
-    <ul class="flex flex-row gap-4 text-sm justify-end items-center h-full">
-        <li><a href="http://app.tracker.gransoftware.de/impressum" target="_blank">Impressum</a></li>
-        <li><a href="http://app.tracker.gransoftware.de/agb" target="_blank">AGB</a></li>
-    </ul>
-</footer>
+    <footer class="px-2 md:px-10 h-[80px]">
+        <ul class="flex flex-row gap-4 text-sm justify-end items-center h-full">
+            <li><a href="http://app.tracker.gransoftware.de/impressum" target="_blank">Impressum</a></li>
+            <li><a href="http://app.tracker.gransoftware.de/agb" target="_blank">AGB</a></li>
+        </ul>
+    </footer>
+</div>
 </body>
 </html>
