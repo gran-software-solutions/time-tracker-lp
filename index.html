@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.2/dist/typography.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
+          rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>GRAN Time Tracker</title>
@@ -63,15 +64,85 @@
         </div>
 
         <div class="flex flex-col justify-between gap-20 rounded-2xl pt-10 mt-40 ">
-            <div class="flex flex-col border-b rounded-2xl pb-10">
-                <div class="flex">
+            <div class="flex flex-row justify-between gap-10 border-b rounded-2xl">
+                <div class="prose">
+                    <h2>Quick Actions</h2>
+                    <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
+                        accomplish
+                        anything without a single click. Manage your trackers, change views, export timesheets, even
+                        sign
+                        out.</p>
+
+
+                    <div class="flex flex-col justify-between gap-10">
+                        <div class="prose">
+                            <h2>Hotkeys</h2>
+                            <p>Blend in hotkeys with your alt key and navigate the app without moving your mouse.
+                                Imagine
+                                alt-tabbing
+                                from
+                                your IDE to your browser, then pressing a combo of hotkeys to quickly set up your
+                                tracker
+                                for a new
+                                task.</p>
+                        </div>
+                        <div>
+                            <div class="w-[650px] h-[150px] bg-no-repeat bg-center"
+                                 style="background-image: url('assets/hotekeys.png')"></div>
+                        </div>
+                    </div>
+
                     <div class="prose">
-                        <h2>Convenient List and The Timeline View</h2>
+                        <h2>Powerful Timesheet Editing</h2>
+                        <p>Before you export your timesheet for approval, it’s always good to check it up again and see
+                            if
+                            you
+                            missed
+                            something. There are various ways to retrospectively edit your timesheet.</p>
+
                         <p>
-                            <span class="font-bold">The Traditional List-View</span> allows for a quick overview of the
+                            You can use the Timeline View and simply drag blocks of time on it, or go to the list view
+                            and
+                            change
+                            your
+                            entries with a precision of a minute. You can always add entries manually for any day using
+                            the
+                            calendar.
+                        </p>
+                    </div>
+
+                    <div class="mt-10">
+                        <div class="w-full h-[250px] bg-no-repeat bg-center"
+                             style="background-image: url('assets/editing1.png')"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[600px] h-[900px] bg-no-repeat bg-center shadow-xl rounded-xl"
+                         style="background-image: url('assets/quick-actions.png')"></div>
+                </div>
+            </div>
+
+            <div class="prose">
+                <h2>Interactive Timeline</h2>
+                <p>Effortlessly drag and drop time entries, just like on a calendar. Simplify your time tracking.</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center rounded-2xl py-10 text-[#fff9ef]">
+                <div class="w-full h-[300px] bg-no-repeat bg-contain bg-center rounded-2xl"
+                     style="background-image: url('assets/timeline2.png')"></div>
+            </div>
+
+            <div class="flex flex-col border-b rounded-2xl pb-10">
+                <div class="flex gap-10">
+                    <div class="prose">
+                        <h2>Traditional List-View</h2>
+                        <p>
+                            List allows for a quick overview of
+                            the
                             period you
                             are interested in. Additionally it
-                            allows you to easily continue any existing task, edit or delete it, or move to another day
+                            allows you to easily continue any existing task, edit or delete it, or move to another
+                            day
                             using
                             a
                             calendar.
@@ -82,9 +153,6 @@
                          style="background-image: url('assets/trad-list.png')"></div>
                 </div>
 
-                <div class="w-full h-[200px] bg-no-repeat bg-contain"
-                     style="background-image: url('assets/timeline.png')"></div>
-
 
                 <div class="flex justify-between">
                     <div class="prose w-1/2">
@@ -92,13 +160,7 @@
                         <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
                     </div>
 
-                    <p class="prose place-self-end">
-                        <span class="font-bold">The new Timeline View</span> allows you to safely modify a timesheet without
-                        overlapping hours. Using only your
-                        mouse you can easily modify and move entries around. The Overlap-Guard feature makes sure your day will
-                        be
-                        fully filled without errors.
-                    </p>
+
                 </div>
 
                 <div class="flex">
@@ -116,12 +178,14 @@
             <div class="flex flex-col">
                 <div class="prose">
                     <h2>Parallel Tracking</h2>
-                    <p>Use your time more efficiently with an instant overview of all running trackers. You can quickly
+                    <p>Use your time more efficiently with an instant overview of all running trackers. You can
+                        quickly
                         browse,
                         discard or finish tasks without even changing your current context.</p>
 
                     <h2>Quick Stats</h2>
-                    <p>Your favourite statistics are always available. Just open up the drawer by clicking, or pressing the
+                    <p>Your favourite statistics are always available. Just open up the drawer by clicking, or
+                        pressing the
                         hotkey
                         if you don’t like using mouse.</p>
                 </div>
@@ -139,61 +203,11 @@
             </div>
         </div>
 
-        <div class="flex flex-row justify-between gap-10 border-b rounded-2xl">
-            <div class="prose">
-                <h2>Quick Actions</h2>
-                <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
-                    accomplish
-                    anything without a single click. Manage your trackers, change views, export timesheets, even sign
-                    out.</p>
-
-
-                <div class="flex flex-col justify-between gap-10">
-                    <div class="prose">
-                        <h2>Hotkeys</h2>
-                        <p>Blend in hotkeys with your alt key and navigate the app without moving your mouse. Imagine
-                            alt-tabbing
-                            from
-                            your IDE to your browser, then pressing a combo of hotkeys to quickly set up your tracker
-                            for a new
-                            task.</p>
-                    </div>
-                    <div>
-                        <div class="w-[650px] h-[150px] bg-no-repeat bg-center"
-                             style="background-image: url('assets/hotekeys.png')"></div>
-                    </div>
-                </div>
-
-                <div class="prose">
-                    <h2>Powerful Timesheet Editing</h2>
-                    <p>Before you export your timesheet for approval, it’s always good to check it up again and see if
-                        you
-                        missed
-                        something. There are various ways to retrospectively edit your timesheet.</p>
-
-                    <p>
-                        You can use the Timeline View and simply drag blocks of time on it, or go to the list view and
-                        change
-                        your
-                        entries with a precision of a minute. You can always add entries manually for any day using the
-                        calendar.
-                    </p>
-                </div>
-
-                <div class="mt-10">
-                    <div class="w-full h-[250px] bg-no-repeat bg-center"
-                         style="background-image: url('assets/editing1.png')"></div>
-                </div>
-            </div>
-            <div>
-                <div class="w-[600px] h-[900px] bg-no-repeat bg-center shadow-xl rounded-xl"
-                     style="background-image: url('assets/quick-actions.png')"></div>
-            </div>
-        </div>
 
     </section>
 
-    <section id="CTA" class="relative mt-40 mb-40 px-2 md:px-10 text-center flex flex-col items-center justify-center outline outline-[#ff7d52] rounded-tl-xl rounded-tr-xl py-10 ">
+    <section id="CTA"
+             class="relative mt-40 mb-40 px-2 md:px-10 text-center flex flex-col items-center justify-center outline outline-[#ff7d52] rounded-tl-xl rounded-tr-xl py-10 ">
         <div class="prose-xl mb-20">
             <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now.
                 Become a part of the community and shape the future of how software developers track their time.</p>
