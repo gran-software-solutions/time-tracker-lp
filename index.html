@@ -51,8 +51,8 @@
         </nav>
     </header>
 
-    <section id="hero" class="h-[400px] mb-60 flex justify-center ">
-        <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 md:px-10 text-center w-2/3">
+    <section id="hero" class="h-[400px] mb-60 flex justify-center items-center flex-col">
+        <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 md:px-10 text-center w-2/3 mt-40 mb-40">
             <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
             <h1 style="margin-bottom: 0.2em">Track your time <span class="blur-sm hover:blur-none cursor-none">🕑</span>
                 like
@@ -62,12 +62,13 @@
             spent timesheeting.
 
             <!-- ff5e29 -->
+        </div>
 
-            <form class="p-2 rounded-xl rotate-1 skew-x-3">
-                <button class="px-4 py-4 rounded-xl text-white bg-[#ff5e29] animate-wiggle animate-infinite hover:outline outline-offset-0 outline-4 outline-[#ff7d52] mt-40">
-                    Start Tracking Now
-                </button>
-            </form>
+        <div class="p-2 rounded-xl rotate-1 skew-x-3">
+            <a href="http://app.tracker.gransoftware.de/signup" target="_blank"
+               class="px-4 py-4 rounded-xl text-white text-2xl bg-[#ff5e29] animate-wiggle animate-infinite hover:outline outline-offset-0 outline-4 outline-[#ff7d52] ">
+                Start Tracking Now
+            </a>
         </div>
     </section>
 
@@ -214,16 +215,19 @@
         </div>
     </section>
 
-    <section id="CTA" class="mb-10 px-2 md:px-10 text-center flex justify-center">
-        <div class="prose">
+    <section id="CTA" class="mb-10 px-2 md:px-10 text-center flex flex-col items-center justify-center">
+        <div class="prose mb-20">
             <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now.
                 Become
                 a part
                 of the community and shape the future of how software developers track their time.</p>
+        </div>
 
-                <a href="http://app.tracker.gransoftware.de/signup" target="_blank" class="px-4 py-4 rounded-xl text-white bg-[#ff5e29] animate-wiggle animate-infinite hover:outline outline-offset-0 outline-4 outline-[#ff7d52] mt-40">
-                    Start Tracking Now
-                </a>
+        <div class="p-2 rounded-xl rotate-1 skew-x-3">
+            <a href="http://app.tracker.gransoftware.de/signup" target="_blank"
+               class="px-4 py-4 rounded-xl text-white text-2xl bg-[#ff5e29] animate-wiggle animate-infinite hover:outline outline-offset-0 outline-4 outline-[#ff7d52] ">
+                Start Tracking Now
+            </a>
         </div>
     </section>
 
