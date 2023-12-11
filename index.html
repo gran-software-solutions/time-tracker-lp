@@ -23,22 +23,23 @@
 <div class="explosion bg-no-repeat bg-contain bg-top w-full h-full absolute top-[843px] blur"
      style="z-index:-100; background-image: url('/assets/explo1.jpeg')"></div>
 
-<div class="container mx-auto">
-    <header class="mb-40">
+<header class="mb-40 flex justify-center bg-[#252422] text-[#fff9ef]">
+    <div class="container">
         <nav class="flex justify-between">
             <div class=" flex items-center">
                 CHRONO
             </div>
             <ul class="flex flex-row gap-4 justify-end h-[80px] items-center">
-                <li class="opacity-50 hover:opacity-75 hover:bg-[#ffcfbf] rounded-2xl p-2"><a
+                <li class="hover:bg-[#ea6e39] rounded p-2 px-5"><a
                         href="#features">Features</a>
                 </li>
-                <li class="opacity-75 bg-[#ffcfbf] rounded-2xl p-2"><a href="http://app.tracker.gransoftware.de/signup"
+                <li class="bg-[#ff5e29] hover:opacity-75 rounded px-5 py-2"><a href="http://app.tracker.gransoftware.de/signup"
                                                                        target="_blank">Sign up</a></li>
             </ul>
         </nav>
-    </header>
-
+    </div>
+</header>
+<div class="container mx-auto">
     <section id="hero" class="h-[800px] flex justify-center items-center flex-col mb-40">
         <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 md:px-10 text-center w-2/3 mt-40 mb-40">
             <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
@@ -64,7 +65,7 @@
         </div>
 
         <div class="flex flex-col justify-between gap-20 rounded-2xl pt-10 mt-40 ">
-            <div class="flex flex-row justify-between gap-10 border-b rounded-2xl">
+            <div class="flex flex-row justify-between gap-10 rounded-2xl">
                 <div class="prose">
                     <h2>Quick Actions</h2>
                     <p>Never touch your keyboard again. Using smart shortcuts and intuitive quick actions modal you can
@@ -124,7 +125,7 @@
     </section>
 </div>
 <!-- close container -->
-            <div class="bg-[#252422] p-10">
+            <div class="bg-[#252422] p-10 mt-40">
                 <div class="container mx-auto">
                     <div class="prose" style="color: #fff9ef">
                         <h2 style="color: #fff9ef">Interactive Timeline</h2>
@@ -144,7 +145,7 @@
             </div>
         </div>
 
-        <div class="flex flex-row justify-between gap-10">
+        <div class="flex flex-row justify-between gap-10 mt-40">
             <div class="prose">
                 <h2>Parallel Tracking</h2>
                 <p>Use your time more efficiently with an instant overview of all running trackers. You can
@@ -204,12 +205,14 @@
     </section>
 
 
-    <footer class="px-2 md:px-10 h-[80px]">
+</div>
+<footer class="px-2 md:px-10 h-[80px] bg-[#252422] text-[#fff9ef]">
+    <div class="container pt-5">
         <ul class="flex flex-row gap-4 text-sm justify-end items-center h-full">
             <li><a href="http://app.tracker.gransoftware.de/impressum" target="_blank">Impressum</a></li>
             <li><a href="http://app.tracker.gransoftware.de/agb" target="_blank">AGB</a></li>
         </ul>
-    </footer>
-</div>
+    </div>
+</footer>
 </body>
 </html>
