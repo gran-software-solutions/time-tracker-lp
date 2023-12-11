@@ -20,46 +20,50 @@
 </head>
 <body>
 
-<div class="explosion bg-no-repeat bg-contain bg-top w-full h-full absolute top-[843px] blur"
+<div class="explosion bg-no-repeat bg-contain bg-top w-full h-full absolute top-[773px] blur"
      style="z-index:-100; background-image: url('/assets/explo1.jpeg')"></div>
 
-<header class="mb-40 flex justify-center bg-[#252422] text-[#fff9ef]">
+<header class="flex justify-center bg-[#252422] text-[#fff9ef]">
     <div class="container">
         <nav class="flex justify-between">
             <div class=" flex items-center">
                 CHRONO
             </div>
             <ul class="flex flex-row gap-4 justify-end h-[80px] items-center">
-                <li class="hover:bg-[#ea6e39] rounded p-2 px-5"><a
+                <li ><a class="p-2 px-5 block w-full h-full hover:bg-[#ff5e29] rounded"
                         href="#features">Features</a>
                 </li>
-                <li class="bg-[#ff5e29] hover:opacity-75 rounded px-5 py-2"><a
+                <li><a
+                        class="p-2 px-5 block w-full h-full bg-[#ff5e29] rounded hover:brightness-125"
                         href="http://app.tracker.gransoftware.de/signup"
                         target="_blank">Sign up</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
 <div class="container mx-auto">
     <section id="hero" class="h-[800px] flex justify-center items-center flex-col mb-40">
-        <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 md:px-10 text-center w-2/3 mt-40 mb-40">
+        <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl px-2 text-center w-2/3 mb-20">
             <div class="text-sm mb-10 uppercase text-[#ff5e29]">Time tracking</div>
             <h1 style="margin-bottom: 0.2em">Track your time <span class="blur-sm hover:blur-none cursor-none">🕑</span>
                 like a <span class="text-9xl">Software Developer</span></h1>
-            Use keybindings you know from your IDEs, intuitive widgets, quick actions and smart autocomplete to reduce
-            time
-            spent timesh**ting.
+
+            <p>Use keybindings you know from your IDEs, intuitive widgets, quick actions and smart autocomplete to
+                reduce
+                time
+                spent timesh**ting.</p>
         </div>
 
         <a href="http://app.tracker.gransoftware.de/signup" target="_blank"
-           class="px-4 py-4 rounded text-white text-2xl bg-[#ff5e29] hover:bg-[#403d39] outline-offset-0 outline-4 outline-[#ff7d52] ">
+           class="px-4 py-4 rounded text-white text-2xl bg-[#ff5e29]  hover:brightness-125 outline-offset-0 outline-4 outline-[#ff7d52] ">
             Start Tracking Now
         </a>
     </section>
 
     <section id="features" class="grid grid-rows-8 grid-flow-row gap-40">
-        <div class="mx-auto border-2 border-[#ffcfbf] rounded-2xl xl:w-[1196px] lg:w-[945px] md:w-[645px] drop-shadow-xl">
-            <div class="xl:h-[501px] lg:h-[396px] md:h-[296px] bg-no-repeat bg-center bg-contain rounded-2xl"
+        <div class="mx-auto border-2 border-[#ffcfbf] rounded-2xl xl:w-[1196px] lg:w-[945px] drop-shadow-xl">
+            <div class="xl:h-[501px] lg:h-[396px] bg-no-repeat bg-center bg-contain rounded-2xl"
                  style="background-image: url('assets/tracking-page.png')"></div>
         </div>
 
@@ -121,10 +125,11 @@
                          style="background-image: url('assets/quick-actions.png')"></div>
                 </div>
             </div>
+        </div>
     </section>
 </div>
-<!-- close container -->
-<div class="bg-[#252422] p-10 mt-40">
+<!-- close container px-20 -->
+<div class="bg-[#252422] py-10 mt-40">
     <div class="container mx-auto">
         <div class="prose" style="color: #fff9ef">
             <h2 style="color: #fff9ef">Interactive Timeline</h2>
@@ -132,7 +137,7 @@
         </div>
     </div>
 </div>
-<!-- start container -->
+<!-- start container px-20 -->
 
 
 <div class="container mx-auto">
@@ -189,20 +194,22 @@
             </div>
         </div>
     </section>
-
 </div>
+
 <section id="CTA"
-         class="relative bg-[#fff9ef] text-[#252422] mt-40 pb-40 px-2 md:px-10 text-center flex flex-col items-center justify-center rounded-tl-xl rounded-tr-xl py-10 ">
-    <div class="container">
-        <div class="prose-xl mb-20">
+         class="relative bg-[#fff9ef] text-[#252422] mt-40 pb-40 px-2 text-center flex flex-col items-center justify-center rounded-tl-xl rounded-tr-xl py-10 ">
+    <div class="container flex flex-col items-center">
+        <div class="prose-2xl mb-20 w-[64ch]">
             <p>If you like bleeding edge technology that gives no guarantees then I invite you to join us right now.
                 Become a part of the community and shape the future of how software developers track their time.</p>
         </div>
 
-        <a href="http://app.tracker.gransoftware.de/signup" target="_blank"
-           class="px-4 py-4 rounded text-white text-2xl bg-[#ff5e29] hover:outline outline-offset-0 outline-4 outline-[#ff7d52] ">
-            Start Tracking Now
-        </a>
+        <div>
+            <a href="http://app.tracker.gransoftware.de/signup" target="_blank"
+               class="px-4 py-4 rounded text-white text-2xl bg-[#ff5e29] hover:brightness-125">
+                Start Tracking Now
+            </a>
+        </div>
 
     </div>
 </section>
