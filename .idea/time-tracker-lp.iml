@@ -7,4 +7,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@tailwindcss/typography" level="application" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="a846b416-6b71-4d01-933f-bab7ebfc69eb" />
+  </component>
 </module>
