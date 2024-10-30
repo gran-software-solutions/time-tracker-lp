@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Cookie Policy
 
 Last updated: 30.10.2024
