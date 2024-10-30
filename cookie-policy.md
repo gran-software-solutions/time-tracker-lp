@@ -1,6 +1,5 @@
 ---
-layout: custom_template
-title: Cookie Policy
+layout: default
 ---
 
 # Cookie Policy
