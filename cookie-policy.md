@@ -1,5 +1,5 @@
 ---
-layout: no-title
+layout: default
 ---
 
 # Cookie Policy
