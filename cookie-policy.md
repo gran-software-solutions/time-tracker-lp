@@ -1,7 +1,3 @@
----
-layout: custom_template
-title: Cookie Policy
----
 # Cookie Policy
 
 Last updated: 30.10.2024
