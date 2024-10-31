@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Privacy Policy For GRAN Software Solutions GmbH
 
 Effective:  10.10.2024
