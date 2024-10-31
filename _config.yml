@@ -1,4 +1,4 @@
 markdown: kramdown
 theme: jekyll-theme-minimal
 kramdown:
-  template: custom_template.html
+  template: default.html
