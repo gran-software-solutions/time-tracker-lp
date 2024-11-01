@@ -1,4 +1,4 @@
----
+ ---
 layout: '../layouts/Base.astro'
 title: Privacy Policy
 ---
