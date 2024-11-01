@@ -1,32 +1,33 @@
 ---
-layout: default
+layout: '../layouts/Base.astro'
+title: Privacy Policy
 ---
 
 # Privacy Policy For GRAN Software Solutions GmbH
 
-Effective:  10.10.2024
+Effective: 10.10.2024
 
 This privacy policy applies to you if you use any of our services and products (including our websites and blogs).
 
-# Data controller
+## Data controller
 
 The data controller responsible for processing your information is GRAN Software Solutions GmbH, located at Am Hamburger
 Bahnhof 3 ℅ Glazewski, 10557 Berlin, Germany.
 
-# How to contact GRAN
+## How to contact GRAN
 
 You can contact us via email [hello@gransoftware.de](mailto:hello@gransoftware.de).
 
-# Children
+## Children
 
 Our services and products, including websites and blogs, are not intended for individuals under the age of 18\. If we
 become aware that we have inadvertently collected personal data from such individuals, we will take immediate steps to
 delete that information. If you believe that we may be in possession of personal data from individuals under 18, please
 notify us promptly at hello@gransoftware.de.
 
-# Data we collect
+## Data we collect
 
-## Personal data we get directly from you
+### Personal data we get directly from you
 
 User Information \- When you create an account in any of our products or services, we collect certain personal data,
 including but not limited to your e-mail address, first and last name, timezone. (collectively referred to as “User
@@ -40,7 +41,7 @@ Communication Information \- If you communicate with us via email, telephone, an
 services, or through other channels such as social media or Discord, we collect your contact information, name, and the
 content of your messages, among other relevant details (collectively referred to as "Communication Information").
 
-## Personal data we get indirectly from your use of our products and services
+### Personal data we get indirectly from your use of our products and services
 
 This includes but it’s not limited to visiting our websites and blogs.
 
@@ -59,7 +60,7 @@ Log Data \- information automatically sent by your browser or device when you ac
 services. This includes but it’s not limited to your IP address and the date and time of your request (collectively
 referred to as “Log Data”).
 
-# How we use your data
+## How we use your data
 
 - To provide, maintain, develop and improve our services, products and websites.
 - To conduct research.
@@ -69,7 +70,7 @@ referred to as “Log Data”).
 - To comply with legal obligations, including applicable laws, regulations, legal processes, or enforceable governmental
   requests, and to protect the rights, privacy, safety, or property of our users, affiliates, or any third party.
 
-# Whom we share your data with
+## Whom we share your data with
 
 We may share your personal data with the following parties, when necessary or appropriate:
 
@@ -86,7 +87,7 @@ We may share your personal data with the following parties, when necessary or ap
 - Third parties you share your information with. : If you voluntarily share your data with third parties (e.g., via
   integrations, external apps or exporting documents), we may also share your personal data with them as instructed.
 
-# Retention
+## Retention
 
 We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected, including
 to provide our services, comply with legal obligations, resolve disputes, enforce agreements, and protect our legitimate
@@ -96,7 +97,7 @@ The duration of retention depends on various factors, such as the nature of the 
 legal or regulatory requirements, and your consent where applicable. Once personal data is no longer necessary for these
 purposes, we will securely delete or anonymize it in accordance with applicable laws.
 
-# Legal bases of processing
+## Legal bases of processing
 
 The data we collect and the reasons for processing have the following legal bases:
 
@@ -120,7 +121,7 @@ You will find a recap of what, how and why we collect and process below
 | To protect GRAN, our users, and the public by improving the safety and reliability of our services, including detecting, preventing, and responding to fraud, abuse, security risks, and technical issues.                             | User Information User Created Content Communication Information Cookies Log Data Device Information Usage Data | Legal obligations Legitimate interests                                       |
 | To comply with legal obligations, including applicable laws, regulations, legal processes, or enforceable governmental requests, and to protect the rights, privacy, safety, or property of our users, affiliates, or any third party. | User Information User Created Content Communication Information Cookies Log Data Device Information Usage Data | Legal obligations Contractual necessity Legitimate interestsVital Interests |
 
-# Your rights
+## Your rights
 
 - Right to access your personal data we collect and process.
 - Right to rectify your personal data if it’s outdated or incorrect.
@@ -133,7 +134,7 @@ You will find a recap of what, how and why we collect and process below
 
 You can exercise your rights using interfaces of our services and products or by contacting us at hello@gransoftware.de
 
-# Data transfers
+## Data transfers
 
 We may sometimes share your personal data with a third party outside of the EEA for the reasons mentioned in this
 privacy policy (for example, when you send us an email).
@@ -145,7 +146,7 @@ or ensure the recipient country has adequate data protection laws.
 By using our services, you agree that your personal data will be processed and stored in the servers in the U.S. and may
 also be shared with our service providers and affiliates in other countries.
 
-# Changes to the privacy policy
+## Changes to the privacy policy
 
 We may update this Privacy Policy occasionally. When that happens, we will post the updated version on this page, unless
-the law requires a different type of notice.l
+the law requires a different type of notice.

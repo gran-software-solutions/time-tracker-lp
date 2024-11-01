@@ -1,8 +1,11 @@
+---
+import Footer from '../components/Footer.astro'
+---
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.2/dist/typography.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,11 +38,11 @@
 </head>
 <body>
 
-<header class="flex justify-center bg-[#252422] text-[#fff9ef]">
+<header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
         <div class="hidden sm:flex items-center text-3xl text-[#fff9ef]" style="font-family: Carter One">
             Sheetty
-            <img src="assets/sheetty-logo-compact.svg" width="40" class="ml-3">
+            <img src="sheetty-logo-compact.svg" width="40" class="ml-3">
         </div>
 
         <ul class="w-full flex flex-row gap-4 justify-between md:justify-end h-[80px] items-center">
@@ -81,8 +84,8 @@
 
     <section id="ribbon" class="grid grid-rows-1 grid-flow-row">
         <div class="w-[640px] mx-auto border-2 mb-10 border-[#ffcfbf] rounded hidden sm:block drop-shadow-xl">
-            <video class="lg:w-full lg:h-full hover:cursor-pointer" controls poster="assets/sheetty-fast-onboarding.png">
-                <source src="assets/sheetty-fast-onboarding.mp4" type="video/mp4"/>
+            <video class="lg:w-full lg:h-full hover:cursor-pointer" controls poster="sheetty-fast-onboarding.png">
+                <source src="sheetty-fast-onboarding.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -95,7 +98,7 @@
                     your time tracking, navigate or export timesheets.
                 </p>
 
-                <img src="assets/quick-actions.png" alt="quick actions" class="mx-auto"/>
+                <img src="quick-actions.png" alt="quick actions" class="mx-auto"/>
             </div>
 
             <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
@@ -106,7 +109,7 @@
                     quickly set up your time tracker for a new task. And then get back to work.
                 </p>
 
-                <img src="assets/hotekeys.png" alt="hotkeys" class="mx-auto"/>
+                <img src="hotekeys.png" alt="hotkeys" class="mx-auto"/>
             </div>
 
             <div class="prose sm:prose-2xl lg:w-[30%]">
@@ -118,7 +121,7 @@
                     for any day using the calendar.
                 </p>
 
-                <img src="assets/editing1.png" alt="timesheet editing" class="mx-auto"/>
+                <img src="editing1.png" alt="timesheet editing" class="mx-auto"/>
             </div>
         </div>
     </section>
@@ -150,7 +153,7 @@
             </div>
             <div class="flex flex-col justify-center items-center text-[#fff9ef]">
                 <video width="w-full h-[250px]" autoplay loop muted>
-                    <source src="assets/sheetty.mp4"/>
+                    <source src="sheetty.mp4"/>
                 </video>
             </div>
         </div>
@@ -163,7 +166,7 @@
                         <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
                     </div>
 
-                    <img src="assets/autocomplete.png" alt="autocomplete" class="mx-auto"/>
+                    <img src="autocomplete.png" alt="autocomplete" class="mx-auto"/>
                 </div>
             </div>
 
@@ -177,7 +180,7 @@
                         </p>
                     </div>
 
-                    <img src="assets/parallel-trackers.png" alt="parallel time tracking" class="mx-auto"/>
+                    <img src="parallel-trackers.png" alt="parallel time tracking" class="mx-auto"/>
                 </div>
             </div>
             <div class="lg:w-[30%] mb-5">
@@ -188,7 +191,7 @@
                         <p>Track your earnings and hours worked for a client or a contract.</p>
                     </div>
 
-                    <img src="assets/quick-stats.png" alt="quick statistics" class="mx-auto"/>
+                    <img src="quick-stats.png" alt="quick statistics" class="mx-auto"/>
                 </div>
             </div>
         </div>
@@ -281,8 +284,8 @@
             <p class="text-sm text-left w-full px-5">*VAT not included</p>
 
             <div class="my-10 flex flex-row w-full justify-between items-center px-5">
-                <img class="w-[100px] md:w-[150px]" src="/assets/Hosted_in_GERMANY.png"/>
-                <img class="w-[100px] md:w-[150px]" src="/assets/Made_in_BERLIN.png"/>
+                <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png"/>
+                <img class="w-[100px] md:w-[150px]" src="/Made_in_BERLIN.png"/>
                 <div class="uppercase font-bold w-[100px] md:w-[150px] flex justify-center">
                     <p class="p-1 md:text-xl">for devs<br/><span class="text-2xl text-[#ff5e29]">❤</span> by devs</p>
                 </div>
@@ -291,17 +294,17 @@
             <div class="flex flex-row flex-wrap gap-4 items-top justify-around">
                 <div class="flex flex-col items-center">
                     <p>Built with ♥ by</p>
-                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="assets/gran.png"/></a></p>
+                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="gran.png"/></a></p>
                 </div>
 
                 <div class="flex flex-col items-center">
                     <p>Follow us</p>
                     <div class="flex flex-row items-top justify-around gap-4">
                         <p class="w-[50px] mt-5"><a href="https://www.instagram.com/gran_sheetty/"><img
-                                src="assets/insta.png"/></a></p>
+                                src="insta.png"/></a></p>
                         <p class="w-[60px] mt-5"><a
                                 href="https://www.linkedin.com/company/gran-software-solutions/about/"><img
-                                src="assets/linkedin.png"/></a></p>
+                                src="linkedin.png"/></a></p>
                     </div>
                 </div>
 
@@ -311,17 +314,6 @@
     </div>
 </section>
 
-<footer class="h-[80px] bg-[#252422] text-[#fff9ef]">
-    <div class="container px-5 mx-auto h-full">
-        <div class="flex row items-center h-full">
-            <ul class="flex flex-row gap-4 text-sm justify-between sm:justify-end items-center w-full px-2 ">
-                <li><a href="http://app.sheetty.com/aup" target="_blank">AUP</a></li>
-                <li><a href="http://app.sheetty.com/agb" target="_blank">Terms of Service</a></li>
-                <li><a href="http://app.sheetty.com/datenschutz" target="_blank">Privacy Policy</a></li>
-                <li><a href="http://app.sheetty.com/impressum" target="_blank">Imprint</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+<Footer/>
 </body>
 </html>

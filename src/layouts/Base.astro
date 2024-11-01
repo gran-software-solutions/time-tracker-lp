@@ -1,0 +1,46 @@
+---
+import Footer from '../components/Footer.astro';
+const {title} = Astro.props;
+import '../styles/base.css'
+---
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.2/dist/typography.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
+          rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>{title}</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Carter+One');
+
+        html, body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
+    <nav class="flex justify-between container px-5">
+        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef]" style="font-family: Carter One">
+            Sheetty
+            <a href="/"><img src="/sheetty-logo-compact.svg" width="40" class="ml-3"></a>
+        </div>
+    </nav>
+</header>
+
+<div class="container px-5 mx-auto">
+    <p class="my-5">
+        <a href="/"><strong>&larr; Back</strong></a>
+    </p>
+    <slot/>
+</div>
+<Footer/>
+</body>
+</html>

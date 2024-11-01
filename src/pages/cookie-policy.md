@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: '../layouts/Base.astro'
+title: Cookie Policy
 ---
 
 # Cookie Policy
