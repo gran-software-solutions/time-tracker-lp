@@ -9,16 +9,15 @@ import Footer from '../components/Footer.astro'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
-          rel="stylesheet">
-
     <title>The Time Tracker For Software Developers</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Carter+One');
-
         html, body {
             font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        code {
+            font-family: 'IBM Plex Mono', monospace;
         }
 
         #ribbon::after {
@@ -35,7 +34,6 @@ import Footer from '../components/Footer.astro'
     </style>
 </head>
 <body>
-
 <header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
         <div class="hidden sm:flex items-center text-3xl text-[#fff9ef]" style="font-family: Carter One">
