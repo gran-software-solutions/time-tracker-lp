@@ -1,13 +1,11 @@
 ---
 import Footer from '../components/Footer.astro'
-import Fonts from '../components/Fonts.astro';
 import Head from '../components/Head.astro';
 ---
-<Fonts/>
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/html">
 <Head title="The Time Tracker For Software Developers">
-    <style>
+    <style type="text/css">
         #ribbon::after {
             background: #fff9ef;
             content: "";
@@ -24,7 +22,7 @@ import Head from '../components/Head.astro';
 <body>
 <header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
-        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef]" style="font-family: Carter One">
+        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
             Sheetty
             <img src="sheetty-logo-compact.svg" width="40" class="ml-3">
         </div>

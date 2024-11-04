@@ -1,0 +1,11 @@
+html, body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+code {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.logo-text {
+    font-family: 'Carter One', cursive;
+}
