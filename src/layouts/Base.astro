@@ -1,10 +1,9 @@
 ---
 import Footer from '../components/Footer.astro';
+import Fonts from '../components/Fonts.astro';
 const {title} = Astro.props;
-import '@fontsource/ibm-plex-sans';
-import '@fontsource/ibm-plex-mono';
-import '@fontsource/carter-one';
 ---
+<Fonts/>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +21,16 @@ import '@fontsource/carter-one';
         code {
             font-family: 'IBM Plex Mono', monospace;
         }
+
+        .logo-text {
+            font-family: 'Carter One', sans-serif;
+        }
     </style>
 </head>
 <body>
 <header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
-        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef]" style="font-family: Carter One">
+        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
             Sheetty
             <a href="/"><img src="/sheetty-logo-compact.svg" width="40" class="ml-3"></a>
         </div>
