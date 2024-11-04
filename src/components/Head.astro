@@ -1,5 +1,9 @@
 ---
 const {title} = Astro.props;
+import '@fontsource/ibm-plex-sans';
+import '@fontsource/ibm-plex-mono';
+import '@fontsource/carter-one';
+import '../styles/global.css';
 ---
 <head>
     <meta charset="UTF-8">
@@ -8,14 +12,5 @@ const {title} = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>{title}</title>
-    <style>
-        html, body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-
-        code {
-            font-family: 'IBM Plex Mono', monospace;
-        }
-    </style>
     <slot/>
 </head>

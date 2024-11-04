@@ -1,13 +1,11 @@
 ---
 import Footer from '../components/Footer.astro';
-import Fonts from '../components/Fonts.astro';
-const {title} = Astro.props;
 import Head from '../components/Head.astro';
+const {frontmatter} = Astro.props;
 ---
-<Fonts/>
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/html">
-<Head title={title}/>
+<Head title={frontmatter.title}/>
 <body>
 <header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
