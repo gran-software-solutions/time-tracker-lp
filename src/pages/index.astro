@@ -1,27 +1,13 @@
 ---
 import Footer from '../components/Footer.astro'
 import Fonts from '../components/Fonts.astro';
+import Head from '../components/Head.astro';
 ---
 <Fonts/>
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>The Time Tracker For Software Developers</title>
-
+<Head title="The Time Tracker For Software Developers">
     <style>
-        html, body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-
-        code {
-            font-family: 'IBM Plex Mono', monospace;
-        }
-
         #ribbon::after {
             background: #fff9ef;
             content: "";
@@ -34,7 +20,7 @@ import Fonts from '../components/Fonts.astro';
             z-index: -1;
         }
     </style>
-</head>
+</Head>
 <body>
 <header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
     <nav class="flex justify-between container px-5">
