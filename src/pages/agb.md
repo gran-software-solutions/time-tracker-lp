@@ -3,323 +3,312 @@ layout: '../layouts/Base.astro'
 title: Terms and Conditions
 ---
 
-# Terms of Service
-
-Effective Date: 04.01.2024
-
-Welcome to GRAN!
-
-If you have any questions regarding the GRAN Terms of Service, please email us at hello@gransoftware.de
-
-This GRAN Terms of Service (“Agreement”) is entered into by and between the GRAN Software Solutions GmbH (“GRAN”)
-entity (a german corporation with offices in Berlin, Germany) and the person or entity you represent (“Customer”, “you”
-and “your”). If you are accessing or using the Services on behalf of your company, you confirm that you are authorised
-to accept this Agreement on behalf of your company, and all references to “you”, “your” or “Customer” reference your
-company. More of the definitions are listed under the Definitions section of this document.
-
-This Agreement allows the Customer to acquire subscriptions for online software-as-a-service products and other services
-from GRAN in accordance with any GRAN ordering documents, online registration, order descriptions, or order
-confirmations that make reference to this Agreement ("Order Forms"). It outlines the fundamental terms and conditions
-governing the delivery of those products and services. The terms of this Agreement apply to the Customer's initial
-purchase on the Effective Date, as well as any subsequent purchases made by the Customer that explicitly refer to this
-Agreement.
-
-## Introduction
-
-### 1.1 Overview of the Services
-
-GRAN’s Services are a set of applications including, but not limited to, time tracking and timesheet export.
-
-### Trial Subscription
-
-If the Customer is provided with complimentary access, a trial, or an evaluation subscription to the Service (
-referred
-to as a "Trial Subscription"), the Customer may use the Services in accordance with the terms and conditions outlined
-in
-this Agreement for a duration of ninety (90) days or any other period approved by GRAN (referred to as the "Trial
-Period"). Trial Subscriptions are authorised exclusively for the Customer's assessment to determine whether to
-procure a
-paid subscription to the Services. In the event that the Customer does not proceed to a paid Subscription Term, this
-Agreement and the Customer's entitlement to access and use the Services will end at the conclusion of the Trial
-Period.
-GRAN reserves the right to terminate a Trial Subscription at its discretion and without cause. Regardless of any
-provisions to the contrary in this Agreement, GRAN assumes no warranty, indemnity, support, or other obligations
-concerning Trial Subscriptions.
-
-If the purchase is made during the Trial Period, its reminder will be carried to the purchased Subscription Term
-without
-incurring any additional costs. For example, if the customer purchases the 30-day Premium Subscription while still
-having 10 days remaining in the trial period, the total Subscription Term will be extended to 40 days.
-
-### 1.3 Teams Subscription
-
-The Customer may gain access to the Services without starting a Trial Subscription by accepting an invite to an
-Organisation. While in Teams Subscription, the Customer cannot manage own clients nor track time for them.
-
-While in Teams Subscription, the Customer can only track time for Organisations they are part of.
-
-Some of the User Data created in Teams Subscription will be shared with other User Accounts: the owner of the
-Organisation and other dedicated User Accounts of the Organisation.
-
-The shared User Data includes, but it's not limited to, name, email and tracked time entries, and their descriptions.
-This sharing is intended to facilitate building reports, exporting timesheets, and serving any other business
-purposes
-for the Organization.
-
-The User Data shared with the Organisation will be retained even after the Customer deletes their User Account,
-unless
-the Organisation's owner deletes their User Account.
-
-### 1.4 Acceptance of Terms
-
-This Agreement is effective upon the date you first access or use the Services (“Effective Date”) and continues
-until you or GRAN terminates it (this period, the “Subscription Term”).
-
-By expressing your acceptance of this agreement or by accessing and using any services, you are consenting to abide
-by all the terms, conditions, and notices set forth or referenced in this agreement. If you do not agree to this
-agreement, please do not use any Services.
-
-This agreement contains mandatory arbitration provisions. Any dispute between you and GRAN must be resolved by
-arbitration, rather than jury trials. Please read the arbitration provision in this Agreement as it affects your rights
-under this Agreement.
-
-### 1.5 Modifications to this Agreement
-
-We may change this Agreement from time to time. We will notify you of any material change via email, on our website by
-providing a link to the revised Agreement, or by other methods we may determine from time to time. Unless otherwise
-specified by GRAN, changes become effective for Customer upon renewal of Customer’s current Subscription Term.
-
-You will be prompted to accept or reject any material change to this Agreement the next time you use the Service after
-we have made the change. Your acceptance of the revised terms and conditions along with the continued use of the
-Services will indicate your consent to be bound by the revised Agreement.
-
-If GRAN specifies that changes to the Agreement will take effect prior to Customer’s next renewal of the Subscription
-Term and Customer objects to such changes, Customer may terminate the applicable Subscription Term and receive as its
-sole remedy a refund of any fees Customer has pre-paid for use of the applicable Services for the terminated portion of
-the Subscription Term.
-
-## 2 User Accounts
-
-### 2.1 Registration
-
-(a) You and your Users must be at least 18 years old and capable of forming a legally binding agreement to register for
-an account. (b) You will provide accurate and complete information during the registration process, including a valid
-email address and any other required details. (c) Users are responsible for maintaining the confidentiality of their
-account credentials. They must not share their password or permit anyone else to access their account. (d) Each Account
-is intended for individual use only. Users may not create multiple Accounts without explicit permission from the service
-provider.
-
-### 2.2 General Restrictions
-
-#### 2.2.1 General Restrictions
-
-The Customer shall not act against AUP, nor allow any third party to do so.
-
-#### 2.2.1 Indemnification by Customer
-
-The Customer agrees to defend, indemnify, and hold GRAN, its affiliates, and their respective officers, directors,
-employees, and agents harmless from and against any claims, liabilities, damages, losses, and expenses, including
-reasonable attorneys' fees and costs, arising out of or in any way connected with (i) the Customer's use of the
-Services, (ii) violation of this Agreement or any applicable Laws, (iii) infringement of any intellectual property,
-publicity, privacy, or other rights, (iv) any Customer Data or content submitted to the Services, (v) the Customer's
-breach of any representations, warranties, or obligations under this Agreement.
-
-### 2.3 Security
-
-GRAN commits to employing commercially reasonable technical and organisational measures to prevent unauthorised access,
-alteration, or disclosure of any Service or Customer Data. Nevertheless, GRAN assumes no responsibility for errors in
-transmission, unauthorised third-party access, or other causes beyond GRAN’s control.
-
-## 3 Subscription Term, Fees and Payment
-
-### 3.1 Pricing
-
-The pricing details, including any applicable subscription fees, will be as specified in the Order Form agreed upon by
-the Customer. The rates specified in the Order Form are applicable for the initial Subscription Term, and subsequent
-adjustments or increases may be automatically applied. Customers will receive prior notification through email, the GRAN
-website, or any available communication medium. Unless expressly stated otherwise, all fees are exclusive of any
-applicable taxes. The Customer is responsible for settling all Taxes, as detailed in Section 3.2 of this agreement.
-
-The Customer may use Coupons during purchases, and GRAN reserves the right to apply discounts or other benefits at its
-discretion.
-
-### 3.2 Billing and Payment
-
-The Customer is required to settle all fees as specified in the relevant Order Form and make payment within thirty (30)
-days of receiving the invoice, unless otherwise specified in the applicable Order Form. The Customer is accountable for
-settling all Taxes, and unless specified otherwise, Taxes are not included in the fees outlined in the relevant Order
-Form. If, due to legal obligations, the Customer must withhold any Taxes from their payment, the payable fees will be
-adjusted so that GRAN receives an amount, post-withholding, equivalent to what it would have received without any
-withholdings, thereby absolving GRAN from any Tax liability. In the case of delayed payments, a service charge of 0.5%
-per month of the amount due or the maximum amount permitted by law, whichever is less, will be applied.
-
-### 3.3 Subscription Term Renewal and Cancellation
-
-#### 3.3.1 Effective Date
-
-This Agreement becomes effective on the Effective Date and remains in force until the expiration or termination of all
-Subscription Terms.
-
-#### 3.3.2 Renewal
-
-Unless explicitly stated otherwise in the relevant Order Form, each Subscription Term will renew automatically for
-additional periods (as determined by the Customer) unless either party provides written notice of termination through
-email.
-
-#### 3.3.3 Cancellation
-
-Either party has the right to terminate this Agreement, including all associated Order Forms, under the following
-conditions: (a) failure to remedy any significant breach of this Agreement (including non-payment of fees) within
-thirty (30) days after receiving written notice; (b) discontinuation of operations without a successor; or (c)
-initiation of bankruptcy, receivership, trust deed, creditors' arrangement, composition, or a similar proceeding, or if
-such a proceeding is filed against that party and not dismissed within sixty (60) days thereafter.
-
-#### 3.3.4 Refund Policy
-
-With the exception of the provisions explicitly outlined in Section 5.1 (“Limited Warranty”), all fees are
-non-refundable, unless expressly stated otherwise in the applicable Order Form. In exceptional cases where GRAN fails to
-provide the agreed-upon services or experiences substantial service disruptions, a refund may be considered at GRAN’s
-discretion. If a refund is approved, GRAN will process the refund within a reasonable period using the original method
-of payment, unless an alternative arrangement is agreed upon.
-
-#### 3.3.5 Survival
-
-The following Sections will survive any expiration or termination of this Agreement: 1.2 (Trial Subscription), 2.2 (
-General Restrictions), 2.3 (Security), 4 (Intellectual Property), 5.2 (Warranty Disclaimer), 7 (General Terms).
-
-## 4 Intellectual Property
-
-### 4.1 Ownership of Service
-
-GRAN and its suppliers retain full ownership of all intellectual property rights, including patents, copyrights,
-trademarks, trade secrets, and other proprietary rights, related to the Services, Documentation, and any derivative
-works or improvements (collectively referred to as "GRAN Technology"). The Customer is granted a limited, non-exclusive,
-non-transferable licence to use the GRAN Technology solely for the purpose of accessing and using the Services in
-accordance with this Agreement. The Services are provided as an online, hosted solution, and the Customer is not
-entitled to receive a physical or downloadable copy of the Services or any underlying GRAN Technology. Any trademarks,
-service marks, and logos used in connection with the Services are the property of GRAN or its licensors. No licence or
-right to use such trademarks is granted to the Customer.
-
-### 4.2 Feedback
-
-Any feedback, suggestions, or contributions provided by the Customer concerning the Services may be used by GRAN to
-enhance or improve the GRAN Technology without any obligation or compensation to the Customer.
-
-### 4.3 User Data Ownership
-
-Customer maintains all rights, title, and interest, including intellectual property rights, in the Customer Data
-provided to GRAN. Under the terms of this Agreement, Customer grants GRAN a non-exclusive, global, royalty-free right to
-use, copy, store, transmit, modify, create derivative works, and display the Customer Data solely to the extent
-necessary for providing the Services to Customer. GRAN does not function as an archiving service. While GRAN commits not
-to intentionally delete any Customer Data from any Service before the termination of the applicable Subscription Term,
-it explicitly disclaims any additional obligations related to storage. The Customer further assures compliance of all
-Customer Data with the AUP.
-
-## 5 Limited Warranty
-
-### 5.1 Limited Warranty
-
-GRAN provides a warranty, solely for the benefit of the Customer, ensuring that each Service will function substantially
-in accordance with the relevant Documentation. In the event of a breach of this warranty, GRAN's sole liability, and the
-Customer's exclusive remedy, will be, at no cost to the Customer, for GRAN to exert commercially reasonable efforts to
-correct the reported non-conformity. If GRAN deems such remedy impracticable, either party may terminate the applicable
-Subscription Term, and the Customer will receive a refund of any pre-paid fees for the terminated portion of the
-Subscription Term. This limited warranty does not apply: (i) unless the Customer submits a claim within thirty (30) days
-of discovering the non-conformity, (ii) if the error results from misuse, unauthorised modifications, or third-party
-hardware, software, or services, or (iii) to services provided on a no-charge, trial, or evaluation basis.
-
-### 5.2 Warranty Disclaimer
-
-With the exception of the limited warranty outlined in Section 5.1, all Services are provided "as is." Neither GRAN nor
-its suppliers make any other warranties, whether express or implied, statutory, or otherwise, including but not limited
-to warranties of merchantability, title, fitness for a particular purpose, or non-infringement. GRAN does not guarantee
-uninterrupted or error-free use of the Services, nor does it warrant the review of Customer Data for accuracy or the
-preservation or maintenance of Customer Data without loss or corruption. GRAN is not liable for delays, interruptions,
-service failures, or other issues inherent in the use of the internet, third-party platforms, or other systems beyond
-GRAN's reasonable control. While the Customer may have other statutory rights, the duration of statutorily required
-warranties, if any, shall be limited to the shortest period permitted by law.
-
-## 6 Marketing
-
-The Customer commits to take part in additional reasonable marketing initiatives aimed at highlighting the advantages of
-the services for potential customers. This includes allowing GRAN to showcase the Customer's name, profile picture and
-logo on GRAN's website and in promotional materials. The Customer acknowledges and agrees that GRAN has the right to
-publicly identify them as a customer of GRAN.
-
-## 7 General Terms
-
-### 7.1 Direct Dispute Resolution
-
-(a) In the event of any dispute or claim arising out of or in connection with this agreement, the affected party shall
-provide written notice to the other party, setting forth the details of the dispute (“Notice of Dispute”). Both parties
-agree to engage in good faith negotiations to amicably resolve the dispute before pursuing formal dispute resolution
-methods.
-
-(b) If the dispute cannot be resolved through negotiation, the parties agree to submit the dispute to binding
-arbitration at Bezirksamt Mitte in Berlin, Germany. The arbitration shall be conducted in accordance with the rules of
-Berliner Schiedsamtsgesetz, with the seat of arbitration being Bezirksamt Mitte.
-
-(c) The costs and fees associated with the arbitration process shall be borne by the prevailing party, as determined by
-the arbitrator, unless otherwise agreed by the parties.
-
-(d) By agreeing to arbitrate, the parties expressly waive their right to a jury trial.
-
-(e) This agreement shall be governed by and construed in accordance with the laws of Germany. Any legal action or
-proceeding arising out of or relating to this agreement shall be brought exclusively in the courts of Bezirksamt Mitte,
-Berlin, Germany
-
-(f) For any claim not covered by this dispute resolution provision, the customer agrees to submit to the personal and
-exclusive jurisdiction, as well as the exclusive venue, of the commercial courts situated in Berlin, Germany. In any
-such dispute, German law shall be applicable.
-
-### 7.2 Force Majeure
-
-Neither party shall be held liable for any delay or failure to perform any obligation under this Agreement (excluding
-payment obligations) if such delay or failure is caused by unforeseen events occurring after the signing of this
-Agreement, and beyond the reasonable control of the affected party. Such events may include, but are not limited to,
-strikes, blockades, war, acts of terrorism, riots, natural disasters, failure or diminishment of power,
-telecommunications or data networks or services, or the refusal of a licence by a government agency.
-
-### 7.3 Subpoenas
-
-You acknowledge and agree that GRAN may be required to disclose Customer Data in response to a subpoena, court order, or
-other legal process. In such cases, GRAN will make reasonable efforts to notify you of the request before complying
-unless legally prohibited. By using our services, you consent to the disclosure of Customer Data as described in this
-section. You understand and agree that GRAN may disclose Customer Data to law enforcement agencies, government
-officials, or third parties as required by law and without your consent. GRAN shall not be liable for any damages or
-harm arising from our compliance with legal requests for Customer Data.
-
-### 7.4 Amendments and Waivers
-
-Any changes or additions to this Agreement will only be valid if made in writing and executed by a duly authorised
-representative from each party. Conduct or the failure to enforce rights under this Agreement will not imply a waiver,
-and no waiver will be effective unless it is in writing and signed by a duly authorised representative of the party
-claiming to have waived. No provision in any purchase order or other business form used by the Customer will override
-the terms and conditions of this Agreement. Such documents related to this Agreement are solely for administrative
-purposes and carry no legal weight.
-
-### 7.5 Severability
-
-If any provision of this Agreement is found to be invalid, illegal, or unenforceable under applicable law, it shall not
-affect the validity or enforceability of the remainder of the provisions herein. In such a case, the parties agree to
-replace the invalid or unenforceable provision with a valid and enforceable provision that most closely achieves the
-intended economic effect and purpose of the original provision. The invalidity, illegality, or unenforceability of one
-provision shall not affect the validity, legality, or enforceability of any other provision of this Agreement. All other
-provisions of this Agreement shall remain in full force and effect.
-
-## Definitions
-
-| Term            | Definition                                                                                                                                                                                                                                                                                                                                       |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| “AUP”           | means GRAN’s Acceptable Use Policy, available at **[AUP](/aup)** or a successor URL.                                                                                                                                                                                                                                                             |
-| "Customer Data" | refers to any data, regardless of type, that is submitted to the Services by Customer or on their behalf. This includes, but is not limited to: (a) data submitted, uploaded, or imported to the Services by Customer, including from Third Party Platforms, and (b) data collected using the Services that pertains to or is provided by Users. |
-| “GRAN Apps”     | means any application, be it mobile, web, command-line or desktop client, included in the applicable Service that is made available by GRAN.                                                                                                                                                                                                     |
-| "Feedback"      | encompasses comments, questions, suggestions, or any other input related to any GRAN product or service.                                                                                                                                                                                                                                         |
-| "Laws"          | refers to all relevant local, state, federal, and international laws, regulations, and conventions. This includes, but is not limited to, those pertaining to data privacy, data transfer, international communications, and the exportation of technical or personal data.                                                                      |
-| "User"          | denotes the Customer and their end users, which includes, but is not limited to, employees or contractors working for Customer.                                                                                                                                                                                                                  |
-| “User Account”  | refers to a unique, personal, and secure access profile created by a User for the purpose of using Services. Each User Account is associated with a valid email address.                                                                                                                                                                         |
-| "Services"      | refers to GRAN's proprietary software-as-a-service solution(s), which includes GRAN application programming interfaces (APIs) and GRAN Apps.                                                                                                                                                                                                     |
-| "Taxes"         | encompasses any sales, use, GST, value-added, withholding, or similar taxes or levies, whether domestic or foreign, excluding taxes based on the income of GRAN.                                                                                                                                                                                 |
-| “Documentation” | refers to the technical user documentation provided with the Services.                                                                                                                                                                                                                                                                           |
-| “Coupon”        | refers to a code used during the purchase of a subscription which may yield discounts or other benefits.                                                                                                                                                                                                                                         |
-| “Organisation”  | refers to an entity created by a Customer that allows to exchange some Customer Data between User Accounts.                                                                                                                                                                                                                                      |
+# Sheetty Terms of Service
+
+Effective Date: 14.11.2024
+
+## 1. Welcome to GRAN
+We’re excited to have you here, and we want to make sure you have a great experience using our Service. 
+At GRAN Software Solutions GmbH (**“GRAN”**, **“us”**, **“we”**), our goal is to help you focus on making money by simplifying and
+streamlining workflows that any software company has to face every day. To achieve this, it’s important that we set clear
+expectations between you, our valued user, and us.
+
+These Terms and Conditions (**"Terms"**) are here to help define our relationship and ensure that both you and we understand
+the rules and guidelines when using our Service. This document explains the legal aspects of using Sheetty, including
+how you can use our Service, what we are responsible for, and what happens if things go wrong. It’s important that you
+take a few minutes to read through these Terms to understand your rights and obligations.
+
+In addition to these Terms, we also have two other documents that are equally important for you to review:
+- **<a target="_blank" href="/datenschutz">Privacy Policy</a>**. This outlines how we collect, use, and protect your personal data.
+- **<a target="_blank" href="/aup">Acceptable Use Policy</a>**. This details the rules on what is not allowed when using our service.
+
+By using Sheetty or any other of our Services, you are agreeing to follow not just these Terms, but also our Privacy
+Policy and Acceptable Use Policy (together, the **“Agreements”**). These Agreements are designed to make sure that everyone 
+who uses our Services can do so in a safe, fair, and transparent environment.
+
+Whenever we refer to **“Service”** or **“Services”** in these Terms, we mean our website, platform, and any other features,
+software, or services provided by GRAN, including Sheetty. When we say **“You”** or **“User”**, we’re referring to anyone 
+who uses our Service.
+
+Lastly, while we’ve done our best to keep things clear and easy to understand, we recognize that legal terms can
+sometimes be tricky. If you ever have any questions or need further clarification, feel free to reach out to
+us at hello@gransoftware.de.
+
+As our Services evolve, we may need to update these Terms from time to time. We’ll notify you of any significant 
+changes via e-mail, so you can stay informed.
+
+## 2. Your account
+### You provide complete information
+
+Whenever you need to create an account to use our Services (like for example Sheetty), you agree to provide accurate,
+complete, and up-to-date information. This information is necessary for us to provide you with important communications
+about your subscription, service updates, and any billing issues. If any of your account information changes,
+you are responsible for updating it or informing us about changes at hello@gransoftware.de.
+
+### Keep your credentials safe
+You are responsible for maintaining the security of your account and all activity that happens under your account.
+Please keep your login credentials confidential and secure. If you suspect that someone else is using your account
+without your permission, you must notify us immediately at hello@gransoftware.de. We are not liable for any loss or
+damage arising from unauthorized use of your account.
+
+### You must be at least 18
+You must be at least 18 to create and maintain an account with us. By creating an account, you confirm that you meet 
+this eligibility requirement. If you are creating an account on behalf of a business or other entity, you confirm 
+that you are authorized to do so.
+
+### You agree not to
+- Share your account with anyone else.
+- Transfer your account to another person or entity without our written permission.
+- Create multiple accounts for yourself or your business, unless explicitly permitted.
+- Use the account in violation of our Acceptable Use Policy.
+
+### Termination and Suspension
+We reserve the right to suspend, restrict, or terminate your account at any time, with or without notice, if:
+
+- You breach any of the Agreements.
+- We detect any suspicious activity, unauthorized use, or misuse of your account.
+- We determine it’s necessary to protect the integrity of our Services or comply with legal obligations.
+
+If you choose to terminate your account, you can do so by contacting us at hello@gransoftware.de. Upon termination,
+we may delete your data, unless otherwise required to retain it by law or our legitimate interests.
+
+## 3. Your content
+### Your Content belongs to you
+While using our services you will provide us stuff like notes, entries, contracts or contacts (**“Your Content”**).
+You are responsible for Your Content. These Terms don’t grant us any rights to Your Content except for limited
+rights necessary to provide you our Services. We do our best to keep Your Content safe and secure.
+
+You give us permission to store, back up, and process Your Content to make Services work as expected. This includes
+using it to improve our features, but it does not grant us ownership of Your Content.
+
+### You are responsible for Your Content
+You’re responsible for ensuring that Your Content is lawful, appropriate, and in compliance with these Terms. 
+We don’t review all content, but if we find content that violates our Terms or the law, we may remove it.
+
+You agree not to upload any content that’s illegal, harmful, abusive, or that violates others' intellectual
+property rights. In case of violation, we may suspend or terminate your account, without a refund.
+
+You retain full ownership of Your Content. We don't claim any ownership rights, and you’re free to use it
+as you wish outside of our services.
+
+### Data loss is not impossible
+We work hard to protect Your Content and keep it secure, but we can’t guarantee complete security.
+We recommend you keep a backup of Your Content outside of Services. We are not liable for any loss or damages
+resulting from the use of Your Content or unauthorized access to it. You use Services at your own risk.
+
+## 4. Our services
+### What We Offer
+Our Service is designed to help software agencies focus on billed work. By using our productivity tools, you’ll save
+time on essential but often unpaid tasks like tracking hours, managing contracts, and generating timesheets. We’re here
+to make your workday easier and more efficient.
+
+### Here’s what you can expect
+- Time Tracking to help you stay on top of your hours and projects.
+- Contract Management to keep those important numbers and dates organized.
+- Timesheets for a clear record of the work you’re putting in.
+
+Currently, our Services are available in the EU. We may expand to other regions in the future and will keep you
+posted on any updates.
+ 
+### Service Availability & Modifications
+We do our best to keep everything up and running smoothly. However, sometimes things don’t go as planned—like
+scheduled maintenance or occasional technical hiccups. Here’s what you need to know:
+
+#### Availability
+We aim to keep our service running 24/7, but we can’t guarantee uninterrupted access. We’re not liable for any 
+downtime, interruptions, or service disruptions, whether planned or unexpected. If there’s any prolonged disruption,
+we’ll keep you informed whenever possible.
+
+#### Updates & Changes
+Our team is always working to improve your experience. We may add, modify, or remove features from time to time,
+sometimes without prior notice. While we’ll try to keep you informed of any major changes, some adjustments may
+happen on the fly to enhance your experience.
+
+#### Quality
+We work hard to deliver a high-quality experience, but please note that we can’t guarantee flawless performance. 
+Our goal is to provide reliable tools, though occasional bugs or technical issues may arise. If you encounter any
+problems, reach out to us at hello@gransoftware.de, and we’ll do our best to help.
+
+### Feedback
+We value your input! If you have suggestions on how we can improve our Service, we’d love to hear them at 
+hello@gransoftware.de or using any contact form of ours. Please remember, though, that any feedback you provide
+may be used by us to enhance the platform—no strings attached.
+
+## 5. Payment and billing
+### Auto-renewal
+By signing up for a subscription, you agree to pay the applicable fees according to your chosen plan. Subscriptions 
+are billed in advance on a monthly or annual basis and automatically renew at the end of each billing period unless
+cancelled through your account settings. By subscribing, you authorize us to charge your selected payment method for
+recurring fees until you cancel.
+### No refunds
+All payments are non-refundable. If you cancel your subscription, it will remain active until the end of the current
+billing period, after which it will not renew.
+### Price may change
+If we change our pricing, we will provide advance notice so you can decide whether to continue your subscription.
+For any billing disputes, please contact us within 14 days of the charge. Chargebacks without prior contact may 
+result in the suspension of your account.
+### Taxes and fees
+You are responsible for any applicable taxes, duties, or fees imposed by your local jurisdiction. If payment is not 
+completed on time, your subscription may be suspended until outstanding charges are paid.
+### Our payment provider
+We use a third-party payment provider, Stripe, to securely process payments. By providing your payment information,
+you authorize us to share relevant billing and payment details with Stripe solely for transaction processing. 
+<a href="https://stripe.com/en-de/legal/ssa" target="_blank">Stripe’s Terms of Service</a> govern their handling of your information. We are not responsible for errors or issues 
+that arise from third-party payment processing.
+
+## 6. Termination
+
+### When can we terminate
+We may need to end your access if certain issues come up, like a violation of the Agreements or misuse of the Service. 
+But don’t worry—we’ll make every effort to reach out and give you a heads-up before any termination happens. However, if the safety of other users or the integrity of our Services is at risk, we may end your account immediately without notice.
+
+### When can you terminate
+You can cancel your account anytime. Just let us know at hello@gransoftware.de. If you’re on a paid plan, your account 
+will stay active until the end of the current billing period, and then we’ll stop billing you.
+
+### What happens after termination
+When your account is closed, you’ll no longer have access to the Service or any data stored within your account. If you
+need to export your data, just let us know at hello@gransoftware.de within two weeks of termination, and we’ll provide 
+it to you. If you decide to come back, feel free to re-subscribe again at any time.
+
+### What happens to your data after termination
+We know your data is important. After termination, we’ll do our best to keep it on file for 30 days to give you time to
+download anything you might need. After that, we may delete it from our servers, unless legally required to retain
+it longer.
+
+Please be aware that while we aim to keep your data available for 30 days post-termination, data retrieval cannot be
+guaranteed and is provided on a best-effort basis. We recommend exporting important data before cancelling your account
+whenever possible.
+
+### Notice periods and communication
+If we need to end your account, we’ll notify you at least 7 days in advance via email. However, if the safety of other
+users or the integrity of our Services is at risk, we may end your account immediately without notice. If you decide
+to cancel, we’d appreciate a quick message to help us better understand your needs and expectations.
+
+### Limited liability upon termination
+Our goal is always to serve you as best we can, but if we have to end your access to our Service, we cannot be held 
+liable for any losses or damages of any kind. Termination is at our sole discretion if we believe there’s been a
+violation of these terms or other Agreements, misuse of the Service, or if required by law. By using our Service, 
+you agree that termination doesn’t make us liable for any direct, indirect, incidental, special, consequential, or 
+punitive damages, nor any claims arising from your use of the Service.
+
+## 7. Privacy and data protection
+Your privacy and data security are our top priorities. We follow these principles to keep your data safe and
+comply with GDPR:
+
+- We only collect the information we need to provide and improve our service.
+- We encrypt your data in transit and at rest, ensuring it’s secure throughout its journey.
+- We carefully select partners who meet GDPR standards and adhere to strict data protection guidelines.
+- You have complete control over your data, with the ability to access, update, or delete it whenever you choose.
+- We use secure authentication methods instead of passwords, reducing the risk of credential theft.
+
+We also use cookies and similar technologies to deliver our services. Some are essential, while others help us
+improve your experience. You can manage these preferences through your browser or in our settings.
+
+For more information on how we handle your data, please review our Privacy Policy and Cookie Policy.
+
+You may also want to review the privacy policies of our partners:
+- https://stripe.com/privacy
+- https://policies.google.com/privacy
+- https://contabo.com/en/legal/privacy/
+
+While we take every reasonable measure to protect your data, we cannot guarantee absolute security due to the nature 
+of the internet and digital systems.
+
+## 8. Intellectual property (**“IP”**)
+### Ownership of Our Service
+
+Our Services, including all software, content, and designs, are our property. By using the Service, we grant you a 
+limited, non-exclusive, and non-transferable license to use it for its intended purpose, but you do not gain any
+ownership of this content.
+
+This means that you are not the only one with this license to use our Services, and you cannot transfer or assign 
+this license to anyone else.
+
+Using our Services does not transfer any of our intellectual property rights to you, other than the specific license
+outlined in this agreement. This includes any content or technology displayed or accessed within our platform.
+
+### Your Content
+You own Your Content (e.g. what you create, upload, or otherwise add to our Services). By adding Your Content, you 
+give us a worldwide, royalty-free, sublicensable, and transferable license to use, display, and process it as necessary 
+to run and improve our Services. Read more about it in section 3.
+
+You are solely responsible for ensuring you have the necessary rights to upload or share any content within our 
+Services. We cannot be held responsible for content that infringes third-party IP rights or violates governing laws.
+If such content is found, we reserve the right to remove it promptly.
+
+### Using Our Intellectual Property
+Don’t use our Services in ways that weren’t intended, such as by copying, distributing, or reverse-engineering it. 
+You cannot scrape, resell or use our Services in a way that violates laws or infringe any intellectual property rights.
+Please, just stick to its intended use.
+
+### Reporting Concerns
+If you believe any content on our platform infringes your copyright, please contact us at hello@gransoftware.de with
+details of the alleged infringement. We follow the EU Copyright Directive’s “Notice-and-Takedown” procedures and will
+review and, if necessary, remove any infringing content.
+
+If you believe someone is violating our IP or using it improperly, please let us know at hello@gransoftware.de. We take
+these matters seriously and will take appropriate action.
+
+### Reservation of Rights
+We’re granting you a license to use our Services, but we’re not giving up any of our rights. Any rights not explicitly 
+granted here remain ours.
+
+## 9. Limitation of liability
+WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO—THIS INCLUDES ANY LIABILITY FOR GRAN
+OR OUR AFFILIATES' FRAUD OR FRAUDULENT MISREPRESENTATION IN PROVIDING THE SERVICES. IN REGIONS WHERE CERTAIN TYPES OF 
+LIABILITY EXCLUSIONS AREN’T ALLOWED, WE’RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY 
+FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR BREACH OF CONTRACT WITH YOU. THIS SECTION
+DOES NOT AFFECT YOUR STATUTORY CONSUMER RIGHTS THAT CANNOT BE WAIVED OR LIMITED BY ANY AGREEMENT.
+
+IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, GRAN, ALONG WITH ITS AFFILIATES, SUPPLIERS, 
+OR DISTRIBUTORS, WILL NOT BE LIABLE FOR:
+
+- ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR
+- ANY LOSS OF USE, DATA, BUSINESS, OR PROFITS, REGARDLESS OF THE LEGAL THEORY USED.
+
+THESE EXCLUSIONS OR LIMITATIONS WILL APPLY REGARDLESS OF WHETHER OR NOT GRAN OR ANY OF ITS AFFILIATES HAS BEEN ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGES.
+
+IF YOU USE THE SERVICE FOR COMMERCIAL OR BUSINESS PURPOSES, GRAN AND ITS AFFILIATES WILL HAVE NO LIABILITY TO YOU FOR 
+ANY LOSS OF PROFIT, LOSS OF BUSINESS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS OPPORTUNITY.
+
+OTHER THAN FOR TYPES OF LIABILITY THAT WE CANNOT LIMIT BY LAW (AS DESCRIBED ABOVE), GRAN LIMITS OUR LIABILITY TO YOU
+TO 100% OF ANY AMOUNT YOU’VE PAID TO GRAN UNDER YOUR CURRENT SUBSCRIPTION OR SERVICE PLAN. THIS PROVISION DOES NOT
+APPLY WHERE PROHIBITED BY EU OR OTHER APPLICABLE LAW.
+
+## 10. Modifications
+We’re constantly working to improve our Services, so we may update or change these Terms from time to time. 
+This could include changes to the Services themselves, features, functionality, pricing, or how we deliver our services.
+
+If we make any significant changes to these Terms, we’ll notify you by email, and the updated version will be
+posted on our website. We encourage you to review the Terms periodically to stay informed about any changes.
+
+By continuing to use our Service after the changes take effect, you agree to the updated Terms. If you do not
+agree with the changes, you can stop using the Service at any time.
+
+Changes will take effect as soon as they are posted, unless we specify otherwise.
+
+## 11. Governing law
+These Terms are governed by and construed in accordance with the laws of Germany, without regard to its conflict of 
+law principles.
+
+Any disputes arising out of or relating to these Terms, your use of the Service, or any other matter related to our
+relationship shall be subject to the exclusive jurisdiction of the courts of Berlin, Germany.
+## 12. Contact Information
+If you have any questions, concerns, or need further assistance regarding these Terms, your account, or any other
+matters, reach out to us at:
+
+Email: hello@gransoftware.de
+
+Postal Address:
+GRAN Software Solutions GmbH
+
+Am Hamburger Bahnhof 3\
+c/o Glazewski\
+10557 Berlin\
+Germany
+
+For legal inquiries or formal correspondence, please use the email provided above.
+
+We’ll do our best to respond to your inquiry as soon as possible.
