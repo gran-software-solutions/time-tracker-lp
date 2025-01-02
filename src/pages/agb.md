@@ -211,6 +211,7 @@ You may also want to review the privacy policies of our partners:
 - https://stripe.com/privacy
 - https://policies.google.com/privacy
 - https://contabo.com/en/legal/privacy/
+- https://www.hetzner.com/legal/privacy-policy/
 
 While we take every reasonable measure to protect your data, we cannot guarantee absolute security due to the nature 
 of the internet and digital systems.
