@@ -14,6 +14,24 @@ import Head from '../components/Head.astro';
         gtag('config', 'G-RJB0Z11MPP');
     </script>
 
+    <!-- Event snippet for LP to Signup (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11039123167/E1YkCPPM_4AaEN_N7o8p',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
     <style type="text/css">
         #ribbon::after {
             background: #fff9ef;
@@ -60,7 +78,8 @@ import Head from '../components/Head.astro';
             <li><a
                     class="p-2 sm:px-5 block w-full h-full bg-[#ff5e29] rounded-3xl hover:brightness-125"
                     href="https://app.sheetty.com/signup"
-                    target="_blank">Sign up</a></li>
+                    target="_blank"
+                    onclick="gtag_report_conversion('https://app.sheetty.com/signup')">Sign up</a></li>
         </ul>
     </nav>
 </header>
@@ -79,7 +98,9 @@ import Head from '../components/Head.astro';
         </div>
 
         <a href="https://app.sheetty.com/signup" target="_blank"
-           class="p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center">
+           class="p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
+           onclick="gtag_report_conversion('https://app.sheetty.com/signup')"
+        >
             Start 90 Days Free Trial
         </a>
     </section>
@@ -140,7 +161,9 @@ import Head from '../components/Head.astro';
         </div>
 
         <a href="https://app.sheetty.com/signup" target="_blank"
-           class="p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center">
+           class="p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
+           onclick="gtag_report_conversion('https://app.sheetty.com/signup')"
+        >
             Start 90 Days Free Trial
         </a>
     </div>
@@ -280,6 +303,7 @@ import Head from '../components/Head.astro';
                 <div class="mt-10 flex justify-center">
                     <a class="p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
                        href="https://app.sheetty.com/signup"
+                       onclick="gtag_report_conversion('https://app.sheetty.com/signup')"
                        target="_blank">Start 90 Days Free Trial</a>
                 </div>
             </div>
