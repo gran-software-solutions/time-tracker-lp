@@ -1,0 +1,342 @@
+---
+import Footer from '../../components/Footer.astro'
+import Head from '../../components/Head.astro';
+---
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<Head title="The Time Tracker For Software Developers">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJB0Z11MPP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-RJB0Z11MPP');
+
+        const converters = document.querySelectorAll('.convert');
+        converters.forEach(el => {
+            el.addEventListener('click', it => {
+                let url = it.target.href
+                var callback = function () {
+                    if (typeof (url) != 'undefined') {
+                        window.location = url;
+                    }
+                };
+
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-11039123167/E1YkCPPM_4AaEN_N7o8p',
+                    'event_callback': callback
+                });
+
+                return false;
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #ribbon::after {
+            background: #fff9ef;
+            content: "";
+            height: 45%;
+            left: 0;
+            position: absolute;
+            top: 85%;
+            transform: skewY(10deg);
+            width: 100%;
+            z-index: -1;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGFDCQSQ');</script>
+    <!-- End Google Tag Manager -->
+</Head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGFDCQSQ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
+    <nav class="flex justify-between container px-5">
+        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
+            Sheetty
+            <img src="/sheetty-logo-compact.svg" width="40" class="ml-3">
+        </div>
+
+        <ul class="w-full flex flex-row gap-4 justify-between md:justify-end h-[80px] items-center">
+            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
+                   href="#features">Funktionen</a>
+            </li>
+            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
+                   href="#pricing">Preise</a>
+            </li>
+            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
+                   href="https://app.sheetty.com/signin">Anmelden</a>
+            </li>
+            <li><a
+                    class="convert p-2 sm:px-5 block w-full h-full bg-[#ff5e29] rounded-3xl hover:brightness-125"
+                    href="https://app.sheetty.com/signup"
+            >Registrieren</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container px-5 mx-auto">
+    <section id="hero" class="flex flex-col justify-center items-center pt-10 mb-10">
+        <div class="prose sm:prose-2xl text-center w-full p-2">
+            <h1 style="margin-bottom: 0.2em">Verfolge die Zeit <span class="blur-sm hover:blur-none cursor-none">🕑</span>
+                wie ein <span class="text-6xl sm:text-9xl">Softwareentwickler</span></h1>
+
+    <p class="text-justify">Sheetty ist eine Zeiterfassungs-App, die es Ihnen ermöglicht, Shortcuts,
+    die <code>ctrl+k</code> Suchleiste und Kalender-Widgets zu verwenden, um die Zeit, die mit
+    Zeiterfassung verbracht wird, zu reduzieren. Und es macht Spaß.</p>
+    <p class="text-justify">
+    Es erfasst Ihre Verträge, geleisteten Arbeitsstunden, verdientes Geld und die maximalen
+    Stunden, die Sie erfassen können.
+    </p>
+        </div>
+
+        <a href="https://app.sheetty.com/signup"
+           class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
+        >
+    Starte 90 Tage kostenlose Testversion
+    </a>
+    </section>
+
+    <section id="ribbon" class="grid grid-rows-1 grid-flow-row">
+        <div class="w-[640px] mx-auto border-2 mb-10 border-[#ffcfbf] rounded hidden sm:block drop-shadow-xl">
+            <video class="lg:w-full lg:h-full hover:cursor-pointer" controls poster="/sheetty-fast-onboarding.png">
+                <source src="/sheetty-fast-onboarding.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-between">
+            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
+                <h2 id="features">Schnellaktionen</h2>
+                <p> Sie können die Maus oder Shortcuts und Schnellaktionen verwenden, um dieselben
+                Dinge schneller zu erledigen. Zum Beispiel, um Ihre Zeiterfassung zu verwalten,
+                zu navigieren oder Zeiterfassungsbögen zu exportieren. </p>
+
+                <img src="/quick-actions.png" alt="quick actions" class="mx-auto"/>
+            </div>
+
+            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
+                <h2>Tastenkürzel</h2>
+                <p> Drücken Sie <code>alt + Taste</code>, um in der App zu navigieren, ohne die Maus zu bewegen. Zum Beispiel: Alt-Tab von Ihrer IDE zu Ihrem Browser, dann drücken Sie eine Kombination von Tastenkürzeln, um Ihren ZeitTracker schnell für eine neue Aufgabe einzurichten. Und dann zurück an die Arbeit.
+                </p>
+
+                <img src="/hotekeys.png" alt="hotkeys" class="mx-auto"/>
+            </div>
+
+            <div class="prose sm:prose-2xl lg:w-[30%]">
+                <h2>Zeiterfassungsbearbeitung</h2>
+                <p> Sie können die Timeline-Ansicht verwenden und einfach Zeitblöcke darauf verschieben (wie in einer Kalender-App) oder zur Listenansicht wechseln und Ihre Einträge mit der Tastatur ändern. Sie können jederzeit manuell Einträge für jeden Tag über den Kalender hinzufügen.
+                </p>
+
+                <img src="/editing1.png" alt="timesheet editing" class="mx-auto"/>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="bg-[#fff9ef] py-10 my-5">
+    <div class="container px-5 mx-auto flex flex-col items-center">
+        <div class="prose sm:prose-2xl mb-5">
+            <h2>90 Tage kostenlose Testversion</h2>
+            <p> Wir bieten ein modernes und einfaches Zeiterfassungstool. Sheetty hat minimale Funktionen, um maximale Arbeit zu leisten. Testen Sie es <span class="font-bold">90 Tage lang kostenlos</span>. Keine Kreditkarte erforderlich. Kein Risiko.
+            </p>
+        </div>
+
+        <a href="https://app.sheetty.com/signup"
+           class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
+        >
+        Starte 90 Tage kostenlose Testversion
+        </a>
+    </div>
+</div>
+
+<div class="container px-5 mx-auto">
+    <section>
+        <div class="sm:mb-10">
+            <div class="prose sm:prose-2xl p-2 mb-5">
+                <h2>Interaktive Timeline</h2>
+                <p>Einfaches Verschieben von Zeiteinträgen per Drag & Drop, genau wie in einem Kalender.</p>
+            </div>
+            <div class="flex flex-col justify-center items-center text-[#fff9ef]">
+                <video width="w-full h-[250px]" autoplay loop muted>
+                    <source src="/sheetty.mp4"/>
+                </video>
+            </div>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-between">
+            <div class="lg:w-[30%] mb-5">
+                <div class="flex flex-col">
+                    <div class="prose sm:prose-2xl p-2 mb-5">
+                        <h2>Intelligente Autovervollständigung</h2>
+                        <p>Die unscharfe Suche, die auf einen einzelnen Kunden beschränkt ist, ermöglicht es Ihnen, wiederkehrende Aufgaben schnell zu finden.</p>
+                    </div>
+
+                    <img src="/autocomplete.png" alt="autocomplete" class="mx-auto"/>
+                </div>
+            </div>
+
+            <div class="lg:w-[30%]">
+                <div class="flex flex-col justify-between">
+                    <div class="prose sm:prose-2xl p-2 mb-5">
+                        <h2>Parallele Zeiterfassung</h2>
+                        <p> Nutzen Sie Ihre Zeit effizienter mit einer sofortigen Übersicht über alle laufenden Zeiterfassungen. Sie können Aufgaben schnell durchsuchen, verwerfen oder abschließen, ohne Ihren aktuellen Kontext zu verlassen.
+                        </p>
+                    </div>
+
+                    <img src="/parallel-trackers.png" alt="parallel time tracking" class="mx-auto"/>
+                </div>
+            </div>
+            <div class="lg:w-[30%] mb-5">
+                <div class="flex flex-col">
+                    <div class="prose sm:prose-2xl p-2 mb-5">
+                        <h2>Schnellstatistiken</h2>
+                        <p>Ihre bevorzugten Statistiken sind immer verfügbar. Öffnen Sie einfach
+                        die Seitenleiste.</p>
+                        <p>Verfolgen Sie Ihre Einnahmen und geleisteten Arbeitsstunden für einen Kunden oder einen Vertrag.</p>
+                    </div>
+
+                    <img src="/quick-stats.png" alt="quick statistics" class="mx-auto"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="bg-[#fff9ef] py-5">
+    <div id="pricing" class="flex justify-center items-center flex-col">
+        <div class="prose sm:prose-2xl px-5 text-center mb-10 w-full md:w-[35ch]">
+            <h2>Preise</h2>
+            <p>Unsere Preise sind einfach und ehrlich. Wir werden Ihre persönlichen Daten niemals an Werbeagenturen oder Dritte verkaufen.</p>
+        </div>
+
+        <div class="w-full sm:w-[600px]">
+            <div class="bg-[#252422] text-[#fff9ef] md:rounded-3xl py-10 p-2 sm:p-20 text-center text-xl">
+            <div class="mb-10"> <p class="mb-2 text-4xl"> <span class="font-bold mb-2">ab 0,99 €*</span> </p> <p>pro 30 Tage</p> </div>
+
+                <div class="w-full flex justify-center px-5">
+                    <ul class="text-left w-full sm:w-[300px] leading-10">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        Unbegrenzte Kunden und Projekte
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        Unbegrenzte Zeiterfassungsexporte
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        Alle zukünftigen Updates inbegriffen
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        Discord-Server, um mit uns zu chatten
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
+                                 fill="currentColor"
+                                 stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        90 Tage kostenlose Probeversion
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="mt-10 flex justify-center">
+                    <a class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
+                       href="https://app.sheetty.com/signup"
+                       >Starte 90 Tage kostenlose Testversion</a>
+                </div>
+            </div>
+            <p class="text-sm text-left w-full px-5">*VAT not included</p>
+
+            <div class="my-10 flex flex-row w-full justify-between items-center px-5">
+                <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png"/>
+                <img class="w-[100px] md:w-[150px]" src="/Made_in_BERLIN.png"/>
+                <div class="uppercase font-bold w-[100px] md:w-[150px] flex justify-center">
+                    <p class="p-1 md:text-xl">for devs<br/><span class="text-2xl text-[#ff5e29]">❤</span> by devs</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row flex-wrap gap-4 items-top justify-around">
+                <div class="flex flex-col items-center">
+                    <p>Gebaut mit ♥ von</p>
+                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="/gran.png"/></a></p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p>Folge uns</p>
+                    <div class="flex flex-row items-top justify-around gap-4">
+                        <p class="w-[50px] mt-5"><a href="https://www.instagram.com/gran_sheetty/"><img
+                                src="/insta.png"/></a></p>
+                        <p class="w-[60px] mt-5"><a
+                                href="https://www.linkedin.com/company/gran-software-solutions/about/"><img
+                                src="/linkedin.png"/></a></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<Footer/>
+
+</body>
+</html>
