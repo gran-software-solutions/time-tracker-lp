@@ -1,6 +1,6 @@
 ---
-import Footer from '../components/Footer.astro'
-import Head from '../components/Head.astro';
+import Footer from '../../components/Footer.astro'
+import Head from '../../components/Head.astro';
 ---
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/html">
@@ -77,23 +77,23 @@ import Head from '../components/Head.astro';
     <nav class="flex justify-between container px-5">
         <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
             Sheetty
-            <img src="sheetty-logo-compact.svg" width="40" class="ml-3">
+            <img src="/sheetty-logo-compact.svg" width="40" class="ml-3">
         </div>
 
         <ul class="w-full flex flex-row gap-4 justify-between md:justify-end h-[80px] items-center">
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#features">Features</a>
+                   href="#features">Funktionen</a>
             </li>
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#pricing">Pricing</a>
+                   href="#pricing">Preise</a>
             </li>
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="https://app.sheetty.com/signin">Sign in</a>
+                   href="https://app.sheetty.com/signin">Anmelden</a>
             </li>
             <li><a
                     class="convert p-2 sm:px-5 block w-full h-full bg-[#ff5e29] rounded-3xl hover:brightness-125"
                     href="https://app.sheetty.com/signup"
-            >Sign up</a></li>
+            >Registrieren</a></li>
         </ul>
     </nav>
 </header>
@@ -101,63 +101,50 @@ import Head from '../components/Head.astro';
 <div class="container px-5 mx-auto">
     <section id="hero" class="flex flex-col justify-center items-center pt-10 mb-10">
         <div class="prose sm:prose-2xl text-center w-full p-2">
-            <h1 style="margin-bottom: 0.2em">Track time <span class="blur-sm hover:blur-none cursor-none">🕑</span>
-                like a <span class="text-6xl sm:text-9xl">Software Developer</span></h1>
-
-            <p class="text-justify">Sheetty is a time tracking app that lets you use shortcuts, <code>ctrl+k</code>
-                search bar and calendar-like
-                widgets to reduce time spent timesh**ting. And makes it fun.</p>
-            <p class="text-justify">It tracks your contracts, hours worked, money earned and maximum hours you can clock
-                in.</p>
+            <h1 style="margin-bottom: 0.2em">Verfolge die Zeit <span class="blur-sm hover:blur-none cursor-none">🕑</span>
+                wie ein <span class="text-4xl sm:text-9xl">Softwareentwickler</span></h1>
+    <p class="text-justify">Sheetty ist eine Zeiterfassungs-App, die die Verwendung von Shortcuts, der <code>ctrl+k</code> Suchleiste und Kalender-Widgets ermöglicht, um die für die Zeiterfassung benötigte Zeit zu reduzieren. Und es macht Spaß.</p>
+    <p class="text-justify">
+    Sie erfasst Verträge, geleistete Arbeitsstunden, verdientes Geld und die maximalen Stunden, die geplant sind.
+    </p>
         </div>
 
         <a href="https://app.sheetty.com/signup"
            class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
         >
-            Start 90 Days Free Trial
-        </a>
+    Starte 90 Tage kostenlose Testversion
+    </a>
     </section>
 
     <section id="ribbon" class="grid grid-rows-1 grid-flow-row">
         <div class="w-[640px] mx-auto border-2 mb-10 border-[#ffcfbf] rounded hidden sm:block drop-shadow-xl">
-            <video class="lg:w-full lg:h-full hover:cursor-pointer" controls poster="sheetty-fast-onboarding.png">
-                <source src="sheetty-fast-onboarding.mp4" type="video/mp4"/>
+            <video class="lg:w-full lg:h-full hover:cursor-pointer" controls poster="/sheetty-fast-onboarding.png">
+                <source src="/sheetty-fast-onboarding.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <div class="flex flex-row flex-wrap justify-between">
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-                <h2 id="features">Quick Actions</h2>
-                <p>
-                    You can use mouse or shortcuts and quick actions to do the same thing faster. E.g. manage
-                    your time tracking, navigate or export timesheets.
-                </p>
-
-                <img src="quick-actions.png" alt="quick actions" class="mx-auto"/>
+            <div class="prose sm:prose-xl lg:w-[30%] mb-20">
+                <h2 id="features">Schnellaktionen</h2>
+                <p>Maus oder Shortcuts sowie Schnellaktionen können verwendet werden, um dieselben Dinge schneller zu erledigen. Zum Beispiel, um die Zeiterfassung zu verwalten, zu navigieren oder Zeiterfassungsbögen zu exportieren. </p>
+                <img src="/quick-actions.png" alt="quick actions" class="mx-auto"/>
             </div>
 
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-                <h2>Hotkeys</h2>
-                <p>
-                    Press <code>alt + key</code> to navigate the app without moving your mouse.
-                    E.g. alt-tab from your IDE to your browser, then press a combo of hotkeys to
-                    quickly set up your time tracker for a new task. And then get back to work.
-                </p>
+            <div class="prose sm:prose-xl lg:w-[30%] mb-20">
+                <h2>Tastenkürzel</h2>
+                <p><code>Alt + Taste</code> kann verwendet werden, um in der App zu navigieren, ohne die Maus zu bewegen. Zum Beispiel: Alt-Tab von der IDE zum Browser, dann eine Kombination von Tastenkürzeln drücken, um den ZeitTracker schnell für eine neue Aufgabe einzurichten. Und dann zurück an die Arbeit.</p>
 
-                <img src="hotekeys.png" alt="hotkeys" class="mx-auto"/>
+                <img src="/hotekeys.png" alt="hotkeys" class="mx-auto"/>
             </div>
 
-            <div class="prose sm:prose-2xl lg:w-[30%]">
-                <h2>Timesheet Editing</h2>
+            <div class="prose sm:prose-xl lg:w-[30%]">
+                <h2>Zeiterfassungsbearbeitung</h2>
                 <p>
-                    You can use the Timeline View and simply drag blocks of time on it (like in a calendar
-                    app), or go to the list view
-                    and change your entries with a keyboard. You can always add entries manually
-                    for any day using the calendar.
+                Die Timeline-Ansicht kann verwendet werden, um Zeitblöcke darin zu verschieben (wie in einer Kalender-App) oder zur Listenansicht zu wechseln und Einträge mit der Tastatur zu ändern. Einträge können jederzeit manuell für jeden Tag über den Kalender hinweg hinzugefügt werden.
                 </p>
 
-                <img src="editing1.png" alt="timesheet editing" class="mx-auto"/>
+                <img src="/editing1.png" alt="timesheet editing" class="mx-auto"/>
             </div>
         </div>
     </section>
@@ -166,17 +153,15 @@ import Head from '../components/Head.astro';
 <div class="bg-[#fff9ef] py-10 my-5">
     <div class="container px-5 mx-auto flex flex-col items-center">
         <div class="prose sm:prose-2xl mb-5">
-            <h2>90 Days Free Trial</h2>
-            <p>
-                We offer a modern and simple time tracking tool. Sheetty has minimum features to do maximum
-                work. Try it for <span class="font-bold">90 days for free</span>. No credit card required. No risk.
+            <h2>90 Tage kostenlose Testversion</h2>
+            <p> Wir bieten ein modernes und einfaches Zeiterfassungstool. Sheetty hat minimale Funktionen, um maximale Arbeit zu leisten. <span class="font-bold">90 Tage lang kostenlos testen</span>. Keine Kreditkarte erforderlich. Kein Risiko.
             </p>
         </div>
 
         <a href="https://app.sheetty.com/signup"
            class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
         >
-            Start 90 Days Free Trial
+        Starte 90 Tage kostenlose Testversion
         </a>
     </div>
 </div>
@@ -184,13 +169,13 @@ import Head from '../components/Head.astro';
 <div class="container px-5 mx-auto">
     <section>
         <div class="sm:mb-10">
-            <div class="prose sm:prose-2xl p-2 mb-5">
-                <h2>Interactive Timeline</h2>
-                <p>Effortlessly drag and drop time entries, just like in a calendar.</p>
+            <div class="prose sm:prose-xl p-2 mb-5">
+                <h2>Interaktive Timeline</h2>
+                <p>Einfaches Verschieben von Zeiteinträgen per Drag & Drop, genau wie in einem Kalender.</p>
             </div>
             <div class="flex flex-col justify-center items-center text-[#fff9ef]">
                 <video width="w-full h-[250px]" autoplay loop muted>
-                    <source src="sheetty.mp4"/>
+                    <source src="/sheetty.mp4"/>
                 </video>
             </div>
         </div>
@@ -198,37 +183,34 @@ import Head from '../components/Head.astro';
         <div class="flex flex-row flex-wrap justify-between">
             <div class="lg:w-[30%] mb-5">
                 <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h2>Smart Autocomplete</h2>
-                        <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                        <h2>Intelligente Autovervollständigung</h2>
+                        <p>Die Grobsuche, die auf einen einzelnen Kunden beschränkt ist, ermöglicht es, wiederkehrende Aufgaben schnell zu finden.</p>
                     </div>
 
-                    <img src="autocomplete.png" alt="autocomplete" class="mx-auto"/>
+                    <img src="/autocomplete.png" alt="autocomplete" class="mx-auto"/>
                 </div>
             </div>
 
             <div class="lg:w-[30%]">
                 <div class="flex flex-col justify-between">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h2>Parallel Tracking</h2>
-                        <p>
-                            Use your time more efficiently with an instant overview of all running time trackers. You
-                            can quickly browse, discard or finish tasks without even changing your current context.
-                        </p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                        <h2>Parallele Zeiterfassung</h2>
+                        <p>Mit der sofortigen Übersicht über alle laufenden Zeiterfassungen kann die Zeit effizienter genutzt werden. Aufgaben können schnell durchsucht, verworfen oder abgeschlossen werden, ohne den aktuellen Kontext zu verlassen.</p>
                     </div>
 
-                    <img src="parallel-trackers.png" alt="parallel time tracking" class="mx-auto"/>
+                    <img src="/parallel-trackers.png" alt="parallel time tracking" class="mx-auto"/>
                 </div>
             </div>
             <div class="lg:w-[30%] mb-5">
                 <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h2>Quick Stats</h2>
-                        <p>Your favourite statistics are always available. Just open up the drawer on the side</p>
-                        <p>Track your earnings and hours worked for a client or a contract.</p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                        <h2>Schnellstatistiken</h2>
+                        <p>Bevorzugte Statistiken sind immer verfügbar. Einfach die Seitenleiste öffnen.</p>
+                        <p>Einnahmen und geleistete Arbeitsstunden für einen Kunden oder einen Vertrag können verfolgt werden.</p>
                     </div>
 
-                    <img src="quick-stats.png" alt="quick statistics" class="mx-auto"/>
+                    <img src="/quick-stats.png" alt="quick statistics" class="mx-auto"/>
                 </div>
             </div>
         </div>
@@ -238,19 +220,13 @@ import Head from '../components/Head.astro';
 <section class="bg-[#fff9ef] py-5">
     <div id="pricing" class="flex justify-center items-center flex-col">
         <div class="prose sm:prose-2xl px-5 text-center mb-10 w-full md:w-[35ch]">
-            <h2>Pricing</h2>
-            <p>Our pricing is simple and honest. We'll never sell your personal information to advertising agencies or
-                any third parties.</p>
+            <h2>Preise</h2>
+            <p>Die Preise sind einfach und ehrlich. Persönliche Daten werden niemals an Werbeagenturen oder Dritte verkauft.</p>
         </div>
 
         <div class="w-full sm:w-[600px]">
             <div class="bg-[#252422] text-[#fff9ef] md:rounded-3xl py-10 p-2 sm:p-20 text-center text-xl">
-                <div class="mb-10">
-                    <p class="mb-2 text-4xl">
-                        <span class="font-bold mb-2">from 0,99 €*</span>
-                    </p>
-                    <p>per 30 days</p>
-                </div>
+            <div class="mb-10"> <p class="mb-2 text-4xl"> <span class="font-bold mb-2">ab 0,99 €*</span> </p> <p>pro 30 Tage</p> </div>
 
                 <div class="w-full flex justify-center px-5">
                     <ul class="text-left w-full sm:w-[300px] leading-10">
@@ -262,7 +238,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Unlimited Clients and Projects
+                        Unbegrenzte Kunden und Projekte
                         </li>
 
                         <li>
@@ -273,7 +249,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Unlimited Timesheet exports
+                        Unbegrenzte Zeiterfassungsexporte
                         </li>
 
                         <li>
@@ -284,7 +260,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            All future updates included
+                        Alle zukünftigen Updates inbegriffen
                         </li>
 
                         <li>
@@ -295,7 +271,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Discord server to chat with us
+                        Discord-Server, um mit uns zu chatten
                         </li>
 
                         <li>
@@ -306,7 +282,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            90 days free trial
+                        90 Tage kostenlose Testversion
                         </li>
 
                     </ul>
@@ -315,10 +291,10 @@ import Head from '../components/Head.astro';
                 <div class="mt-10 flex justify-center">
                     <a class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
                        href="https://app.sheetty.com/signup"
-                       >Start 90 Days Free Trial</a>
+                       >Starte 90 Tage kostenlose Testversion</a>
                 </div>
             </div>
-            <p class="text-sm text-left w-full px-5">*VAT not included</p>
+            <p class="text-sm text-left w-full px-5">*MwSt nicht inbegriffen</p>
 
             <div class="my-10 flex flex-row w-full justify-between items-center px-5">
                 <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png"/>
@@ -330,18 +306,18 @@ import Head from '../components/Head.astro';
 
             <div class="flex flex-row flex-wrap gap-4 items-top justify-around">
                 <div class="flex flex-col items-center">
-                    <p>Built with ♥ by</p>
-                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="gran.png"/></a></p>
+                    <p>Gebaut mit ♥ von</p>
+                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="/gran.png"/></a></p>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <p>Follow us</p>
+                    <p>Folge uns</p>
                     <div class="flex flex-row items-top justify-around gap-4">
                         <p class="w-[50px] mt-5"><a href="https://www.instagram.com/gran_sheetty/"><img
-                                src="insta.png"/></a></p>
+                                src="/insta.png"/></a></p>
                         <p class="w-[60px] mt-5"><a
                                 href="https://www.linkedin.com/company/gran-software-solutions/about/"><img
-                                src="linkedin.png"/></a></p>
+                                src="/linkedin.png"/></a></p>
                     </div>
                 </div>
 
@@ -351,7 +327,7 @@ import Head from '../components/Head.astro';
     </div>
 </section>
 
-<Footer title="Deutsch" url="/de"/>
+<Footer title="English" url="/"/>
 
 </body>
 </html>
