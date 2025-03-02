@@ -1,20 +1,32 @@
 <script>
     const languageSelector = document.querySelector('.language-selector');
+
+    function normalizePath(path) {
+        if (!path.endsWith('/')) {
+            path += '/';
+        }
+        return path;
+    }
+
     function preselectLanguage() {
-        const currentPath = window.location.pathname;
+        const currentPath = normalizePath(window.location.pathname);
         for (let option of languageSelector.options) {
-            if (option.value === currentPath) {
+            const optionPath = normalizePath(option.value);
+            if (optionPath === currentPath) {
                 option.selected = true;
                 break;
             }
         }
     }
+
     preselectLanguage();
+
     languageSelector.addEventListener('change', () => {
         const selectedPath = languageSelector.value;
         window.location.href = selectedPath;
     });
 </script>
+
 <footer class="h-[80px] bg-[#252422] text-[#fff9ef]">
     <div class="container px-5 mx-auto h-full">
         <div class="flex flex-row items-center h-full justify-between">
