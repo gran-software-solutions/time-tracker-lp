@@ -1,29 +1,16 @@
 ---
-import Footer from '../components/Footer.astro'
-import Head from '../components/Head.astro';
+import Footer from '../../components/Footer.astro'
+import Head from '../../components/Head.astro';
 ---
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/html" lang="en">
+<html xmlns="http://www.w3.org/1999/html" lang="de">
 <Head title="Time Tracking for Software Developers | Timesheet Management">
-    <meta name="description" content="Sheetty is a time tracking app designed for software developers, offering shortcuts, ctrl+k search bar, and visual widgets for efficient timesheet management. Start your 90-day free trial today.">
-    <meta property="og:title" content="Sheetty: Time Tracking App for Software Developers">
-    <meta property="og:description" content="Use shortcuts, ctrl+k search bar, and visual widgets to reduce time spent on timesheets. Start your 90-day free trial today.">
+    <meta name="description" content="Sheetty je aplikacija za praćenje vremena namenjena softverskim programerima, koja nudi prečice, pretragu pomoću kombinacije ctrl+k i vizuelne vidžete za efikasno upravljanje tabelama vremena. Započnite vaš besplatni probni period od 90 dana danas.">
+    <meta property="og:title" content="Sheetty: Aplikacija za praćenje vremena za softverske programere">
+    <meta property="og:description" content="Koristite prečice, pretragu pomoću kombinacije tipki ctrl+k i vizuelne widgete kako biste smanjili vreme provedeno na tabelama vremena. Započnite vaš besplatni probni period od 90 dana danas.">
     <meta property="og:image" content="https://sheetty.com/sheetty-logo-compact.jpg">
     <meta property="og:url" content="https://sheetty.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Sheetty",
-            "url": "https://sheetty.com",
-            "description": "Sheetty is a time tracking app designed for software developers, offering efficient timesheet management with shortcuts and visual widgets.",
-            "author": {
-                "@type": "Organization",
-                "name": "GRAN Software Solutions GmbH"
-            }
-        }
-    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJB0Z11MPP"></script>
     <script>
@@ -96,23 +83,23 @@ import Head from '../components/Head.astro';
     <nav class="flex justify-between container px-5">
         <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
             Sheetty
-            <img src="sheetty-logo-compact.svg" width="40" class="ml-3" alt="Sheetty time tracking app logo">
+            <img src="/sheetty-logo-compact.svg" width="40" class="ml-3">
         </div>
 
         <ul class="w-full flex flex-row gap-4 justify-between md:justify-end h-[80px] items-center">
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#features">Features</a>
+                   href="#features">Funkcije</a>
             </li>
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#pricing">Pricing</a>
+                   href="#pricing">Cene</a>
             </li>
             <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="https://app.sheetty.com/signin">Sign in</a>
+                   href="https://app.sheetty.com/signin">Login</a>
             </li>
             <li><a
                     class="convert p-2 sm:px-5 block w-full h-full bg-[#ff5e29] rounded-3xl hover:brightness-125"
                     href="https://app.sheetty.com/signup"
-            >Sign up</a></li>
+            >Registracija</a></li>
         </ul>
     </nav>
 </header>
@@ -122,67 +109,46 @@ import Head from '../components/Head.astro';
         <div class="prose sm:prose-2xl text-center w-full p-2">
             <h1 style="margin-bottom: 0.2em">Track time <span class="blur-sm hover:blur-none cursor-none">🕑</span>
                 like a <span class="text-6xl sm:text-9xl">Software Developer</span></h1>
-
-            <p class="text-justify">Sheetty is a time tracking app that lets you use shortcuts, <code>ctrl+k</code>
-                search bar and calendar-like
-                widgets to reduce time spent timesh**ting. And makes it fun.</p>
-            <p class="text-justify">It tracks your contracts, hours worked, money earned and maximum hours you can clock
-                in.</p>
+    <p class="text-justify">Sheetty je aplikacija za praćenje vremena koja vam omogućava korišćenje prečica, pretrage pomoću kombinacije <code>ctrl+k</code> i vidžeta poput kalendara kako biste smanjili vreme provedeno na praćenju vremena. I čini ga zabavnim.</p>
+    <p class="text-justify">
+    Praćenje vaših ugovora, radnih sati, zarade i maksimalnih sati koje možete da evidentirate.
+    </p>
         </div>
 
         <a href="https://app.sheetty.com/signup"
            class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
         >
-            Start Tracking Time
-        </a>
+    Započni praćenje vremena
+    </a>
     </section>
 
     <section id="ribbon" class="grid grid-rows-1 grid-flow-row">
         <div class="w-[640px] mx-auto border-2 mb-10 border-[#ffcfbf] rounded hidden sm:block drop-shadow-xl">
-            <video class="lg:w-full lg:h-full hover:cursor-pointer" preload="none" controls poster="sheetty-fast-onboarding.webp">
-                <source src="sheetty-fast-onboarding.mp4" type="video/mp4"/>
+            <video class="lg:w-full lg:h-full hover:cursor-pointer" preload="none" controls poster="/sheetty-fast-onboarding.webp">
+                <source src="/sheetty-fast-onboarding.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
         </div>
 
-        <div class="prose sm:prose-2xl mb-10">
-            <h2>Features</h2>
-        </div>
-
         <div class="flex flex-row flex-wrap justify-between">
-
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-
-                <h3 id="features">Quick Actions</h3>
-                <p>
-                    You can use mouse or shortcuts and quick actions to do the same thing faster. E.g. manage
-                    your time tracking, navigate or export timesheets.
-                </p>
-
-                <img src="quick-actions.webp" alt="Sheetty time tracking app quick actions interface" class="mx-auto"/>
+            <div class="prose sm:prose-xl lg:w-[30%] mb-20">
+                <h2 id="features">Brze Akcije</h2>
+                <p>Možete koristiti miš ili prečice i brze akcije da biste brže obavili iste stvari. Na primer, upravljajte praćenjem vremena, navigacijom ili izvozom tabela vremena.</p>
+                <img src="/quick-actions.webp" alt="quick actions" class="mx-auto"/>
             </div>
 
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-                <h3>Hotkeys</h3>
-                <p>
-                    Press <code>alt + key</code> to navigate the app without moving your mouse.
-                    E.g. alt-tab from your IDE to your browser, then press a combo of hotkeys to
-                    quickly set up your time tracker for a new task. And then get back to work.
-                </p>
+            <div class="prose sm:prose-xl lg:w-[30%] mb-20">
+                <h2>Prečice</h2>
+                <p>Pritisnite <code>alt + taster</code> za navigaciju kroz aplikaciju bez pomeranja miša. Na primer, alt-tab iz vašeg IDE u vaš pretraživač, zatim pritisnite kombinaciju prečica da biste brzo postavili svoj praćenje vremena za novi zadatak. I onda se vratite na posao.</p>
 
-                <img src="hotkeys.webp" alt="Sheetty app hotkeys for efficient navigation" class="mx-auto"/>
+                <img src="/hotkeys.webp" alt="hotkeys" class="mx-auto"/>
             </div>
 
-            <div class="prose sm:prose-2xl lg:w-[30%]">
-                <h3>Timesheet Editing</h3>
+            <div class="prose sm:prose-xl lg:w-[30%]">
+                <h2>Uređivanje tabela vremena</h2>
                 <p>
-                    You can use the Timeline View and simply drag blocks of time on it (like in a calendar
-                    app), or go to the list view
-                    and change your entries with a keyboard. You can always add entries manually
-                    for any day using the calendar.
-                </p>
-
-                <img src="editing-time-entry.webp" alt="Editing timesheets in Sheetty with a visual widget" class="mx-auto"/>
+                Možete koristiti prikaz vremenske linije i jednostavno prevući blokove vremena na njoj (kao u aplikaciji za kalendar), ili otići na prikaz liste i promeniti unose pomoću tastature. Uvek možete ručno dodavati unose za bilo koji dan koristeći kalendar.</p>
+                <img src="/editing-time-entry.webp" alt="timesheet editing" class="mx-auto"/>
             </div>
         </div>
     </section>
@@ -191,17 +157,17 @@ import Head from '../components/Head.astro';
 <div class="bg-[#fff9ef] py-10 my-5">
     <div class="container px-5 mx-auto flex flex-col items-center">
         <div class="prose sm:prose-2xl mb-5">
-            <h2>90 Days Free Trial</h2>
-            <p>
-                We offer a modern and simple time tracking tool. Sheetty has minimum features to do maximum
-                work. Try it for <span class="font-bold">90 days for free</span>. No credit card required. No risk.
-            </p>
+            <h2>90 dana besplatnog probnog perioda</h2>
+    <p>
+    Nudimo moderan i jednostavan alat za praćenje vremena. Sheetty ima minimalne funkcije za maksimalni učinak. Isprobajte ga <span class="font-bold">90 dana besplatno</span>.
+    Nije potrebna kreditna kartica. Nema rizika.
+    </p>
         </div>
 
         <a href="https://app.sheetty.com/signup"
            class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
         >
-            Start Tracking Time
+        Započni praćenje vremena
         </a>
     </div>
 </div>
@@ -209,13 +175,13 @@ import Head from '../components/Head.astro';
 <div class="container px-5 mx-auto">
     <section>
         <div class="sm:mb-10">
-            <div class="prose sm:prose-2xl p-2 mb-5">
-                <h3>Interactive Timeline</h3>
-                <p>Effortlessly drag and drop time entries, just like in a calendar.</p>
+            <div class="prose sm:prose-xl p-2 mb-5">
+            <h3>Interaktivna vremenska linija</h3>
+            <p>Lako prevucite i pustite unose vremena, baš kao u kalendaru.</p>
             </div>
             <div class="flex flex-col justify-center items-center text-[#fff9ef]">
                 <video width="w-full h-[250px]" autoplay loop muted>
-                    <source src="visual-timetracking.mp4"/>
+                    <source src="/visual-timetracking.mp4"/>
                 </video>
             </div>
         </div>
@@ -223,37 +189,33 @@ import Head from '../components/Head.astro';
         <div class="flex flex-row flex-wrap justify-between">
             <div class="lg:w-[30%] mb-5">
                 <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Smart Autocomplete</h3>
-                        <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                    <h3>Pametno automatsko kompletiranje</h3>
+                    <p>Brza pretraga ograničena na jednog klijenta omogućava vam da brzo pronađete ponavljajuće zadatke.</p>
                     </div>
 
-                    <img src="autocomplete.webp" alt="Sheetty's smart autocomplete feature for quick task selection" class="mx-auto"/>
+                    <img src="/autocomplete.webp" alt="autocomplete" class="mx-auto"/>
                 </div>
             </div>
 
             <div class="lg:w-[30%]">
                 <div class="flex flex-col justify-between">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Parallel Tracking</h3>
-                        <p>
-                            Use your time more efficiently with an instant overview of all running time trackers. You
-                            can quickly browse, discard or finish tasks without even changing your current context.
-                        </p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                    <h3>Paralelno Praćenje</h3>
+                    <p>Iskoristite svoje vreme efikasnije uz trenutni pregled svih aktivnih praćenja vremena. Možete brzo pregledati, odbaciti ili završiti zadatke, bez promene trenutnog konteksta. </p>
                     </div>
 
-                    <img src="parallel-trackers.webp" alt="Managing multiple running time trackers simultaneously in Sheetty" class="mx-auto"/>
+                    <img src="/parallel-trackers.webp" alt="parallel time tracking" class="mx-auto"/>
                 </div>
             </div>
             <div class="lg:w-[30%] mb-5">
                 <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Quick Stats</h3>
-                        <p>Your favourite statistics are always available. Just open up the drawer on the side</p>
-                        <p>Track your earnings and hours worked for a client or a contract.</p>
+                    <div class="prose sm:prose-xl p-2 mb-5">
+                    <h3>Brze Statistike</h3>
+                    <p>Vaše omiljene statistike su uvek dostupne. Samo otvorite fioku sa strane</p> <p>Pratite svoju zaradu i radne sate za klijenta ili ugovor.</p>
                     </div>
 
-                    <img src="quick-stats.webp" alt="Overview of earnings and hours worked in Sheetty's quick stats" class="mx-auto"/>
+                    <img src="/quick-stats.webp" alt="quick statistics" class="mx-auto"/>
                 </div>
             </div>
         </div>
@@ -263,19 +225,13 @@ import Head from '../components/Head.astro';
 <section class="bg-[#fff9ef] py-5">
     <div id="pricing" class="flex justify-center items-center flex-col">
         <div class="prose sm:prose-2xl px-5 text-center mb-10 w-full md:w-[35ch]">
-            <h2>Pricing</h2>
-            <p>Our pricing is simple and honest. We'll never sell your personal information to advertising agencies or
-                any third parties.</p>
+        <h2>Cene</h2>
+        <p>Naše cene su jednostavne i poštene. Nikada nećemo prodavati vaše lične podatke reklamnim agencijama ili trećim stranama.</p>
         </div>
 
         <div class="w-full sm:w-[600px]">
             <div class="bg-[#252422] text-[#fff9ef] md:rounded-3xl py-10 p-2 sm:p-20 text-center text-xl">
-                <div class="mb-10">
-                    <p class="mb-2 text-4xl">
-                        <span class="font-bold mb-2">from 0,99 €*</span>
-                    </p>
-                    <p>per 30 days</p>
-                </div>
+            <div class="mb-10"> <p class="mb-2 text-4xl"> <span class="font-bold mb-2">od 0,99 €*</span> </p> <p>za 30 dana</p> </div>
 
                 <div class="w-full flex justify-center px-5">
                     <ul class="text-left w-full sm:w-[300px] leading-10">
@@ -287,7 +243,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Unlimited Clients and Projects
+                        Neograničeni klijenti i projekti
                         </li>
 
                         <li>
@@ -298,7 +254,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Unlimited Timesheet exports
+                        Neograničeni eksporti praćenja vremena
                         </li>
 
                         <li>
@@ -309,7 +265,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            All future updates included
+                        Sva buduća ažuriranja su uključena
                         </li>
 
                         <li>
@@ -320,7 +276,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            Discord server to chat with us
+                        Discord server, da bi ćaskao sa nama
                         </li>
 
                         <li>
@@ -331,7 +287,7 @@ import Head from '../components/Head.astro';
                                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                       clip-rule="evenodd"></path>
                             </svg>
-                            90 days free trial
+                        90 dana besplatnog probnog perioda
                         </li>
 
                     </ul>
@@ -340,14 +296,14 @@ import Head from '../components/Head.astro';
                 <div class="mt-10 flex justify-center">
                     <a class="convert p-3 mt-5 rounded-3xl text-[#252422] text-2xl bg-white hover:brightness-125 font-bold uppercase text-center"
                        href="https://app.sheetty.com/signup"
-                       >Start Tracking Time</a>
+                       >Započni praćenje vremena</a>
                 </div>
             </div>
-            <p class="text-sm text-left w-full px-5">*VAT not included</p>
+            <p class="text-sm text-left w-full px-5">*PDV nije uključen</p>
 
             <div class="my-10 flex flex-row w-full justify-between items-center px-5">
-                <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png" alt="hosted in Germany"/>
-                <img class="w-[100px] md:w-[150px]" src="/Made_in_BERLIN.png" alt="made in Berlin"/>
+                <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png" alt="Gehostet in Deutschland"/>
+                <img class="w-[100px] md:w-[150px]" src="/Made_in_BERLIN.png" alt="Made in Berlin"/>
                 <div class="uppercase font-bold w-[100px] md:w-[150px] flex justify-center">
                     <p class="p-1 md:text-xl">for devs<br/><span class="text-2xl text-[#ff5e29]">❤</span> by devs</p>
                 </div>
@@ -355,22 +311,20 @@ import Head from '../components/Head.astro';
 
             <div class="flex flex-row flex-wrap gap-4 items-top justify-around">
                 <div class="flex flex-col items-center">
-                    <p>Built with ♥ by</p>
-                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="gran.webp" alt="GRAN Software Solutions GmbH"/></a></p>
+                    <p>Napravljeno sa ♥ od strane</p>
+                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de" aria-label="Lese mehr über GRAN Software Solutions GmbH"><img src="/gran.webp" alt="GRAN Software Solutions GmbH"/></a></p>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <p>Follow us</p>
+                    <p>Zaprati nas</p>
                     <div class="flex flex-row items-top justify-around gap-4">
                         <p class="w-[50px] mt-5"><a href="https://www.instagram.com/gran_sheetty/"><img
-                                src="instagram.png" alt="Follow Sheetty on Instagram"/></a></p>
+                                src="/instagram.png"/></a></p>
                         <p class="w-[60px] mt-5"><a
                                 href="https://www.linkedin.com/company/gran-software-solutions/about/"><img
-                                src="linkedin.png" alt="Connect with Sheetty on LinkedIn"/></a></p>
+                                src="/linkedin.png"/></a></p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
