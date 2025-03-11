@@ -11,7 +11,7 @@ When we say "GRAN", "us", or "we'' in this Acceptable Use Policy (“AUP”), we
 corporation with offices in Berlin, Germany. When we say “Customer”, “you” or “your”, we mean the person or entity you
 represent.
 
-This AUP applies to GRAN (a) websites (including, but not limited to, gransoftware.de, sheetty.com,
+This AUP applies to GRAN (a) websites (including, but not limited to, gransoftware.de, consultingcockpit.com,
 blog.gransoftware.de, and any subsequent URLs, mobile or localised versions, as well as associated domains and
 subdomains) and (b) GRAN products, applications and services. (a) and (b) together are called “Services”.
 

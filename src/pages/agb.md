@@ -3,7 +3,7 @@ layout: '../layouts/Base.astro'
 title: Terms and Conditions
 ---
 
-# Sheetty Terms of Service
+# Consulting Cockpit Terms of Service
 
 Effective Date: 14.11.2024
 
@@ -14,7 +14,7 @@ streamlining workflows that any software company has to face every day. To achie
 expectations between you, our valued user, and us.
 
 These Terms and Conditions (**"Terms"**) are here to help define our relationship and ensure that both you and we understand
-the rules and guidelines when using our Service. This document explains the legal aspects of using Sheetty, including
+the rules and guidelines when using our Service. This document explains the legal aspects of using Consulting Cockpit, including
 how you can use our Service, what we are responsible for, and what happens if things go wrong. It’s important that you
 take a few minutes to read through these Terms to understand your rights and obligations.
 
@@ -22,12 +22,12 @@ In addition to these Terms, we also have two other documents that are equally im
 - **<a target="_blank" href="/datenschutz">Privacy Policy</a>**. This outlines how we collect, use, and protect your personal data.
 - **<a target="_blank" href="/aup">Acceptable Use Policy</a>**. This details the rules on what is not allowed when using our service.
 
-By using Sheetty or any other of our Services, you are agreeing to follow not just these Terms, but also our Privacy
+By using Consulting Cockpit or any other of our Services, you are agreeing to follow not just these Terms, but also our Privacy
 Policy and Acceptable Use Policy (together, the **“Agreements”**). These Agreements are designed to make sure that everyone 
 who uses our Services can do so in a safe, fair, and transparent environment.
 
 Whenever we refer to **“Service”** or **“Services”** in these Terms, we mean our website, platform, and any other features,
-software, or services provided by GRAN, including Sheetty. When we say **“You”** or **“User”**, we’re referring to anyone 
+software, or services provided by GRAN, including Consulting Cockpit. When we say **“You”** or **“User”**, we’re referring to anyone 
 who uses our Service.
 
 Lastly, while we’ve done our best to keep things clear and easy to understand, we recognize that legal terms can
@@ -40,7 +40,7 @@ changes via e-mail, so you can stay informed.
 ## 2. Your account
 ### You provide complete information
 
-Whenever you need to create an account to use our Services (like for example Sheetty), you agree to provide accurate,
+Whenever you need to create an account to use our Services (like for example Consulting Cockpit), you agree to provide accurate,
 complete, and up-to-date information. This information is necessary for us to provide you with important communications
 about your subscription, service updates, and any billing issues. If any of your account information changes,
 you are responsible for updating it or informing us about changes at hello@gransoftware.de.

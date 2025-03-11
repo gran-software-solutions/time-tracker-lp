@@ -9,7 +9,7 @@ Last updated: 30.10.2024
 
 ## Introduction
 
-Our websites, sheetty.com, along with all subdomains under this domain (collectively referred to as “we,” “us,” or
+Our websites, consultingcockpit.com, along with all subdomains under this domain (collectively referred to as “we,” “us,” or
 “our”), use cookies and similar technologies to provide the best user experience. This Cookie Policy outlines what
 cookies are, how we use them, the types of cookies we employ, and the choices you can make regarding their use.
 
