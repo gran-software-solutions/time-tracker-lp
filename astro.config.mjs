@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://www.sheetty.com',
+    site: 'https://www.consultingcockpit.com',
     integrations: [tailwind({
         applyBaseStyles: true
     })],
