@@ -60,6 +60,8 @@ import Head from '../components/Head.astro';
     const notificationDiv = document.createElement('div');
     notificationDiv.id = 'notification';
     notificationDiv.style.display = 'none';
+    notificationDiv.style.backgroundColor = '#f6d6b6';
+    notificationDiv.style.color = '#2e2633';
     notificationDiv.style.position = 'fixed';
     notificationDiv.style.top = '20px';
     notificationDiv.style.left = '50%';
@@ -110,16 +112,7 @@ import Head from '../components/Head.astro';
     function showNotification(message, type) {
         const notificationDiv = document.getElementById('notification');
         notificationDiv.textContent = message;
-
-        if (type === 'success') {
-            notificationDiv.style.backgroundColor = '#4CAF50';
-            notificationDiv.style.color = 'white';
-        } else {
-            notificationDiv.style.backgroundColor = '#f44336';
-            notificationDiv.style.color = 'white';
-        }
         notificationDiv.style.display = 'block';
-
         setTimeout(() => {
             notificationDiv.style.display = 'none';
         }, 3000);
