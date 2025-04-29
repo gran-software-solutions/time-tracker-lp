@@ -1,11 +1,203 @@
-html, body {
-    font-family: 'IBM Plex Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'PaloCompressed';
+    src: url('/Palo-CompressedMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-    font-family: 'IBM Plex Mono', monospace;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2e2633;
+    color: #FFDAB6 !important;
+    font-family: 'Archivio Regular', sans-serif !important;
 }
 
-.logo-text {
-    font-family: 'Carter One', cursive;
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    flex:1;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 48px;
+    font-family: PaloCompressed, sans-serif;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    list-style: square;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer {
+    background-color: #261E2A;
+    color: #FFDAB6;
+    text-align: center;
+    padding: 15px;
+}
+
+form.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #261E2A;
+    border: 1px #6A636D solid;
+}
+
+.checkbox input[type='checkbox'] {
+    margin-bottom: 3px;
+}
+
+form button {
+    background-color: #f6d6b6;
+    color: #2e2633;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form .checkbox {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 720px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+    min-width: 100%;
+    user-select: none;
+}
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+}
+.buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes zoom {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#notification {
+    display: none;
+    padding: 10px;
+    background-color: #261E2A;
+    border: 1px solid #f6d6b6;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }

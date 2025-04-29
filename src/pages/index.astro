@@ -55,6 +55,55 @@ import Head from '../components/Head.astro';
             });
         });
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const notificationDiv = document.getElementById('notification');
+
+    const form = document.querySelector('.signup-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+
+        const data = {
+            name: nameInput.value,
+            email: emailInput.value
+        };
+
+        fetch('https://api.consultingcockpit.com/leads', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.status === 200) {
+                showNotification('Great! We\'ll be in touch soon. 🚀', 'success');
+                document.getElementById('signup-form').remove();
+                form.reset();
+            } else if (response.status === 400) {
+                showNotification('Could not send your application. Please check your e-mail address!', 'error');
+            } else if (response.status === 500) {
+                showNotification('Our servers are taking a coffee break. Mind trying again later?', 'error');
+            } else {
+                showNotification('Something went sideways. Care to try again?', 'error');
+            }
+        })
+        .catch(error => {
+            showNotification('Couldn\'t reach our servers. Internet acting up?', 'error');
+            console.error('Error:', error);
+        });
+    });
+
+    function showNotification(message, type) {
+        const notificationDiv = document.getElementById('notification');
+        notificationDiv.textContent = message;
+        notificationDiv.style.display = 'block';
+    }
+});
+    </script>
 
     <style type="text/css">
         #ribbon::after {
@@ -84,7 +133,7 @@ import Head from '../components/Head.astro';
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TGFDCQSQ');</script>
     <!-- End Google Tag Manager -->
-</Head>
+
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -92,289 +141,183 @@ import Head from '../components/Head.astro';
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header class="flex justify-center bg-[#252422] text-[#fff9ef] h-20">
-    <nav class="flex justify-between container px-5">
-        <div class="hidden sm:flex items-center text-3xl text-[#fff9ef] logo-text">
-            Consulting Cockpit
-            <img src="consultingcockpit-logo-compact.svg" width="40" class="ml-3" alt="Consulting Cockpit time tracking app logo">
+    <div class=wrapper>
+        <div class="container">
+            <img src="https://app.consultingcockpit.com/assets/Consulting_cockpit_logo_peach-BMG-cAIO.webp" alt="Consulting Cockpit Logo" class="logo" />
+
+            <h1>THE FUTURE OF CONSULTING BUSINESS<br/>IS BRIGHT</h1>
+
+    <p>
+    We’re inviting <b>100 bold founders</b> to join the <b>Early Access Program</b> for the Consulting Cockpit - a new kind of control center for software agencies.
+    </p>
+
+    <p>
+    This isn’t just another SaaS tool.
+    It’s a co-created journey with pioneers like you who want to challenge the status quo and build the future of consulting.
+    </p>
+
+    <h2>WHAT IS THE CONSULTING COCKPIT?</h2>
+    <p>
+    It's a suite of tools to meet all the needs for a software consulting business.
+    It includes standard features like time tracking and timesheets, invoices, leave management and contracts management,
+    as well as advanced functions to capture satisfaction of your clients and consultants.
+    </p>
+
+    <div class="gallery">
+        <img src="app1.png" alt="Image 1">
+        <img src="app2.png" alt="Image 2">
+        <img src="app3.png" alt="Image 3">
+    </div>
+
+    <h2>HOW DOES IT CHANGE THE WAY I RUN MY CONSULTING BUSINESS?</h2>
+    <p>
+    The Consulting Cockpit learns your business as you feed it with data. It recognises patterns, identifies weak spots
+    and opportunities. Then it presents you all the important KPIs for your consulting business but also sends
+    notifications with dangers and opportunities.
+    </p>
+
+    <div class="carousel" id="carousel">
+    <div class="carousel-track" id="carousel-track">
+    <!-- Images will be inserted here by JS -->
+    </div>
+    <div class="buttons">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+    </div>
+    </div>
+
+    <!-- Modal viewer -->
+    <div id="modal" style="
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    ">
+    <img id="modal-img" src="" style="max-width: 90%; max-height: 90%; border-radius: 8px;">
+    </div>
+
+    <h2>WHY EARLY ACCESS?</h2>
+    <p>
+    Because Early Access means more than early features.
+    It means your voice shapes what we’re building.
+    You’ll get:
+    </p>
+    <ul>
+        <li>Exclusive early access to the platform before anyone else</li>
+        <li>An invite-only community of innovative founders - just like you</li>
+        <li>The chance to influence features and the roadmap</li>
+    </ul>
+
+    <h2>WHO SHOULD APPLY FOR THE EARLY ACCESS?</h2>
+    <p>
+    You're a perfect fit if you:
+    <ul>
+    <li>Run a software agency</li>
+    <li>Employ up to 20 people</li>
+    <li>Are ready to shape the future of consulting</li>
+    </ul>
+
+    </p>
+    <p>
+        Submit your application and claim your place in the future of consulting business.
+    </p>
+        <div id="notification">
+
         </div>
 
-        <ul class="w-full flex flex-row gap-4 justify-between md:justify-end h-[80px] items-center">
-            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#features">Features</a>
-            </li>
-            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="#pricing">Pricing</a>
-            </li>
-            <li><a class="p-2 sm:px-5 block w-full h-full hover:bg-[#ff5e29] rounded-3xl"
-                   href="https://app.consultingcockpit.com/signin">Sign in</a>
-            </li>
-            <li><a
-                    class="convert p-2 sm:px-5 block w-full h-full bg-[#ff5e29] rounded-3xl hover:brightness-125"
-                    href="https://app.consultingcockpit.com/signup"
-            >Sign up</a></li>
-        </ul>
-    </nav>
-</header>
+        <form id="signup-form" class="signup-form">
+            <input type="text" id="name" placeholder="Your first name e.g. John" required />
+            <input type="email" id="email" placeholder="Your E-Mail address e.g. jd@mydomain.com" required />
 
-<div class="container px-5 mx-auto">
-    <section id="hero" class="flex flex-col justify-center items-center pt-10 mb-10">
-        <div class="prose sm:prose-2xl text-center w-full p-2">
-            <h1 style="margin-bottom: 0.2em">Track time <span class="blur-sm hover:blur-none cursor-none">🕑</span>
-                like a <span class="text-6xl sm:text-9xl">Software Developer</span></h1>
-
-            <p class="text-justify">Consulting Cockpit is a time tracking app that lets you use shortcuts, <code>ctrl+k</code>
-                search bar and calendar-like
-                widgets to reduce time spent timesh**ting. And makes it fun.</p>
-            <p class="text-justify">It tracks your contracts, hours worked, money earned and maximum hours you can clock
-                in.</p>
-        </div>
-
-        <a href="https://app.consultingcockpit.com/signup"
-           class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
-        >
-            Start Tracking Time
-        </a>
-    </section>
-
-    <section id="ribbon" class="grid grid-rows-1 grid-flow-row">
-        <div class="w-[640px] mx-auto border-2 mb-10 border-[#ffcfbf] rounded hidden sm:block drop-shadow-xl">
-            <video class="lg:w-full lg:h-full hover:cursor-pointer" preload="none" controls poster="consultingcockpit-fast-onboarding.webp">
-                <source src="consultingcockpit-fast-onboarding.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div class="prose sm:prose-2xl mb-10">
-            <h2>Features</h2>
-        </div>
-
-        <div class="flex flex-row flex-wrap justify-between">
-
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-
-                <h3 id="features">Quick Actions</h3>
-                <p>
-                    You can use mouse or shortcuts and quick actions to do the same thing faster. E.g. manage
-                    your time tracking, navigate or export timesheets.
-                </p>
-
-                <img src="quick-actions.webp" alt="Consulting Cockpit time tracking app quick actions interface" class="mx-auto"/>
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">I accept Consulting Cockpit’s privacy policy (<a href="/datenschutz">found here</a>).</label>
             </div>
 
-            <div class="prose sm:prose-2xl lg:w-[30%] mb-20">
-                <h3>Hotkeys</h3>
-                <p>
-                    Press <code>alt + key</code> to navigate the app without moving your mouse.
-                    E.g. alt-tab from your IDE to your browser, then press a combo of hotkeys to
-                    quickly set up your time tracker for a new task. And then get back to work.
-                </p>
-
-                <img src="hotkeys.webp" alt="Consulting Cockpit app hotkeys for efficient navigation" class="mx-auto"/>
-            </div>
-
-            <div class="prose sm:prose-2xl lg:w-[30%]">
-                <h3>Timesheet Editing</h3>
-                <p>
-                    You can use the Timeline View and simply drag blocks of time on it (like in a calendar
-                    app), or go to the list view
-                    and change your entries with a keyboard. You can always add entries manually
-                    for any day using the calendar.
-                </p>
-
-                <img src="editing-time-entry.webp" alt="Editing timesheets in Consulting Cockpit with a visual widget" class="mx-auto"/>
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="bg-[#fff9ef] py-10 my-5">
-    <div class="container px-5 mx-auto flex flex-col items-center">
-        <div class="prose sm:prose-2xl mb-5">
-            <h2>90 Days Free Trial</h2>
-            <p>
-                We offer a modern and simple time tracking tool. Consulting Cockpit has minimum features to do maximum
-                work. Try it for <span class="font-bold">90 days for free</span>. No credit card required. No risk.
-            </p>
-        </div>
-
-        <a href="https://app.consultingcockpit.com/signup"
-           class="convert p-3 mt-5 rounded-3xl text-white text-2xl bg-[#ff5e29] hover:brightness-125 font-bold uppercase text-center"
-        >
-            Start Tracking Time
-        </a>
+            <button type="submit">Apply for Early Access</button>
+        </form>
     </div>
 </div>
 
-<div class="container px-5 mx-auto">
-    <section>
-        <div class="sm:mb-10">
-            <div class="prose sm:prose-2xl p-2 mb-5">
-                <h3>Interactive Timeline</h3>
-                <p>Effortlessly drag and drop time entries, just like in a calendar.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center text-[#fff9ef]">
-                <video width="w-full h-[250px]" autoplay loop muted>
-                    <source src="visual-timetracking.mp4"/>
-                </video>
-            </div>
-        </div>
-
-        <div class="flex flex-row flex-wrap justify-between">
-            <div class="lg:w-[30%] mb-5">
-                <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Smart Autocomplete</h3>
-                        <p>Fuzzy search scoped to a single client allows you to quickly find recurring tasks.</p>
-                    </div>
-
-                    <img src="autocomplete.webp" alt="Consulting Cockpit's smart autocomplete feature for quick task selection" class="mx-auto"/>
-                </div>
-            </div>
-
-            <div class="lg:w-[30%]">
-                <div class="flex flex-col justify-between">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Parallel Tracking</h3>
-                        <p>
-                            Use your time more efficiently with an instant overview of all running time trackers. You
-                            can quickly browse, discard or finish tasks without even changing your current context.
-                        </p>
-                    </div>
-
-                    <img src="parallel-trackers.webp" alt="Managing multiple running time trackers simultaneously in Consulting Cockpit" class="mx-auto"/>
-                </div>
-            </div>
-            <div class="lg:w-[30%] mb-5">
-                <div class="flex flex-col">
-                    <div class="prose sm:prose-2xl p-2 mb-5">
-                        <h3>Quick Stats</h3>
-                        <p>Your favourite statistics are always available. Just open up the drawer on the side</p>
-                        <p>Track your earnings and hours worked for a client or a contract.</p>
-                    </div>
-
-                    <img src="quick-stats.webp" alt="Overview of earnings and hours worked in Consulting Cockpit's quick stats" class="mx-auto"/>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<section class="bg-[#fff9ef] py-5">
-    <div id="pricing" class="flex justify-center items-center flex-col">
-        <div class="prose sm:prose-2xl px-5 text-center mb-10 w-full md:w-[35ch]">
-            <h2>Pricing</h2>
-            <p>Our pricing is simple and honest. We'll never sell your personal information to advertising agencies or
-                any third parties.</p>
-        </div>
-
-        <div class="w-full sm:w-[600px]">
-            <div class="bg-[#252422] text-[#fff9ef] md:rounded-3xl py-10 p-2 sm:p-20 text-center text-xl">
-                <div class="mb-10">
-                    <p class="mb-2 text-4xl">
-                        <span class="font-bold mb-2">from 0,99 €*</span>
-                    </p>
-                    <p>per 30 days</p>
-                </div>
-
-                <div class="w-full flex justify-center px-5">
-                    <ul class="text-left w-full sm:w-[300px] leading-10">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 stroke="currentColor" stroke-width="1">
-                                <path fill-rule="evenodd"
-                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                      clip-rule="evenodd"></path>
-                            </svg>
-                            Unlimited Clients and Projects
-                        </li>
-
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 stroke="currentColor" stroke-width="1">
-                                <path fill-rule="evenodd"
-                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                      clip-rule="evenodd"></path>
-                            </svg>
-                            Unlimited Timesheet exports
-                        </li>
-
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 stroke="currentColor" stroke-width="1">
-                                <path fill-rule="evenodd"
-                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                      clip-rule="evenodd"></path>
-                            </svg>
-                            All future updates included
-                        </li>
-
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 stroke="currentColor" stroke-width="1">
-                                <path fill-rule="evenodd"
-                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                      clip-rule="evenodd"></path>
-                            </svg>
-                            Discord server to chat with us
-                        </li>
-
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 stroke="currentColor" stroke-width="1">
-                                <path fill-rule="evenodd"
-                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                      clip-rule="evenodd"></path>
-                            </svg>
-                            90 days free trial
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="mt-10 flex justify-center">
-                    <a class="convert p-3 mt-5 rounded-3xl text-[#252422] text-2xl bg-white hover:brightness-125 font-bold uppercase text-center"
-                       href="https://app.consultingcockpit.com/signup"
-                       >Start Tracking Time</a>
-                </div>
-            </div>
-            <p class="text-sm text-left w-full px-5">*VAT not included</p>
-
-            <div class="my-10 flex flex-row w-full justify-between items-center px-5">
-                <img class="w-[100px] md:w-[150px]" src="/Hosted_in_GERMANY.png" alt="hosted in Germany"/>
-                <img class="w-[100px] md:w-[150px]" src="/Made_in_BERLIN.png" alt="made in Berlin"/>
-                <div class="uppercase font-bold w-[100px] md:w-[150px] flex justify-center">
-                    <p class="p-1 md:text-xl">for devs<br/><span class="text-2xl text-[#ff5e29]">❤</span> by devs</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row flex-wrap gap-4 items-top justify-around">
-                <div class="flex flex-col items-center">
-                    <p>Built with ♥ by</p>
-                    <p class="w-[250px] mt-5"><a href="https://gransoftware.de"><img src="gran.webp" alt="GRAN Software Solutions GmbH"/></a></p>
-                </div>
-
-                <div class="flex flex-col items-center">
-                    <p>Follow us</p>
-                    <div class="flex flex-row items-top justify-around gap-4">
-                        <p class="w-[60px] mt-5"><a
-                                href="https://www.linkedin.com/company/gran-software-solutions/about/"><img
-                                src="linkedin.png" alt="Connect with Consulting Cockpit on LinkedIn"/></a></p>
-                    </div>
-                </div>
+    <Footer/>
 
 
-            </div>
-        </div>
-    </div>
-</section>
+    <script>
+    const track = document.getElementById('carousel-track');
+    const images = Array.from({ length: 10 }, (_, i) => `${i + 1}.png`);
 
-<Footer/>
+    images.forEach(src => {
+    const slide = document.createElement('div');
+    slide.className = 'carousel-slide';
+    slide.innerHTML = `<img src="${src}" alt="Image">`;
+    track.appendChild(slide);
+});
 
+    let index = 0;
+
+    const updateCarousel = () => {
+    track.style.transform = `translateX(-${index * 100}%)`;
+};
+
+    document.getElementById('next').addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    updateCarousel();
+});
+
+    document.getElementById('prev').addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    updateCarousel();
+});
+
+    // Swipe support
+    let startX = 0;
+    let isDown = false;
+
+    track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDown = true;
+});
+
+    track.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    const diff = e.touches[0].clientX - startX;
+    if (Math.abs(diff) > 50) {
+    if (diff > 0) {
+        index = (index - 1 + images.length) % images.length;
+    } else {
+        index = (index + 1) % images.length;
+    }
+    updateCarousel();
+    isDown = false;
+}
+});
+
+    track.addEventListener('touchend', () => {
+    isDown = false;
+});
+
+    // Modal logic
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+
+    document.querySelectorAll('img:not(.logo)').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modal.style.display = 'flex';
+    });
+});
+
+    modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+    </script>
+
+    </Head>
 </body>
 </html>
