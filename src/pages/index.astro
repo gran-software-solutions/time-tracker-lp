@@ -55,6 +55,77 @@ import Head from '../components/Head.astro';
             });
         });
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const notificationDiv = document.createElement('div');
+    notificationDiv.id = 'notification';
+    notificationDiv.style.display = 'none';
+    notificationDiv.style.position = 'fixed';
+    notificationDiv.style.top = '20px';
+    notificationDiv.style.left = '50%';
+    notificationDiv.style.transform = 'translateX(-50%)';
+    notificationDiv.style.padding = '15px 25px';
+    notificationDiv.style.borderRadius = '5px';
+    notificationDiv.style.fontWeight = 'bold';
+    notificationDiv.style.zIndex = '1000';
+    document.body.appendChild(notificationDiv);
+
+    const form = document.querySelector('.signup-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+
+        const data = {
+            name: nameInput.value,
+            email: emailInput.value
+        };
+
+        fetch('http://localhost:8080/leads', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.status === 200) {
+                showNotification('Great! We\'ll be in touch soon. 🚀', 'success');
+                form.reset();
+            } else if (response.status === 400) {
+                showNotification('Mind giving your details another quick look? Something seems off.', 'error');
+            } else if (response.status === 500) {
+                showNotification('Our servers are taking a coffee break. Mind trying again later?', 'error');
+            } else {
+                showNotification('Something went sideways. Care to try again?', 'error');
+            }
+        })
+        .catch(error => {
+            showNotification('Couldn\'t reach our servers. Internet acting up?', 'error');
+            console.error('Error:', error);
+        });
+    });
+
+    function showNotification(message, type) {
+        const notificationDiv = document.getElementById('notification');
+        notificationDiv.textContent = message;
+
+        if (type === 'success') {
+            notificationDiv.style.backgroundColor = '#4CAF50';
+            notificationDiv.style.color = 'white';
+        } else {
+            notificationDiv.style.backgroundColor = '#f44336';
+            notificationDiv.style.color = 'white';
+        }
+        notificationDiv.style.display = 'block';
+
+        setTimeout(() => {
+            notificationDiv.style.display = 'none';
+        }, 3000);
+    }
+});
+    </script>
 
     <style type="text/css">
         #ribbon::after {
