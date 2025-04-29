@@ -71,7 +71,7 @@ import Head from '../components/Head.astro';
             email: emailInput.value
         };
 
-        fetch('http://localhost:8080/leads', {
+        fetch('https://api.consultingcockpit.com/leads', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
