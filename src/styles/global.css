@@ -24,7 +24,7 @@ body {
 
 .container {
     max-width: 720px;
-    margin: 50px auto;
+    margin: auto;
     padding: 30px;
     text-align: left;
     flex:1;
@@ -79,7 +79,7 @@ form.signup-form {
     flex-direction: column;
 }
 
-form input[type="email"] {
+form input {
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -97,7 +97,7 @@ form button {
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 form .checkbox {
