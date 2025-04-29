@@ -304,8 +304,7 @@ import Head from '../components/Head.astro';
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
 
-    document.querySelectorAll('img').forEach(img => {
-    console.log(img)
+    document.querySelectorAll('img:not(.logo)').forEach(img => {
     img.style.cursor = 'zoom-in';
     img.addEventListener('click', () => {
         modalImg.src = img.src;
