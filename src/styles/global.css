@@ -91,6 +91,10 @@ form input {
     border: 1px #6A636D solid;
 }
 
+form button[type="checkbox"] {
+    margin-bottom: 0px;
+}
+
 form button {
     background-color: #f6d6b6;
     color: #2e2633;
@@ -99,10 +103,10 @@ form button {
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 15px;
 }
 
 form .checkbox {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
