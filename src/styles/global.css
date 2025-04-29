@@ -192,3 +192,12 @@ p {
     font-weight: bold;
     cursor: pointer;
 }
+
+#notification {
+    display: none;
+    padding: 10px;
+    background-color: #261E2A;
+    border: 1px solid #f6d6b6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

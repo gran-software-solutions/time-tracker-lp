@@ -57,20 +57,7 @@ import Head from '../components/Head.astro';
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-    const notificationDiv = document.createElement('div');
-    notificationDiv.id = 'notification';
-    notificationDiv.style.display = 'none';
-    notificationDiv.style.backgroundColor = '#f6d6b6';
-    notificationDiv.style.color = '#2e2633';
-    notificationDiv.style.position = 'fixed';
-    notificationDiv.style.top = '20px';
-    notificationDiv.style.left = '50%';
-    notificationDiv.style.transform = 'translateX(-50%)';
-    notificationDiv.style.padding = '15px 25px';
-    notificationDiv.style.borderRadius = '5px';
-    notificationDiv.style.fontWeight = 'bold';
-    notificationDiv.style.zIndex = '1000';
-    document.body.appendChild(notificationDiv);
+    const notificationDiv = document.getElementById('notification');
 
     const form = document.querySelector('.signup-form');
     form.addEventListener('submit', function(e) {
@@ -94,9 +81,10 @@ import Head from '../components/Head.astro';
         .then(response => {
             if (response.status === 200) {
                 showNotification('Great! We\'ll be in touch soon. 🚀', 'success');
+                document.getElementById('signup-form').remove();
                 form.reset();
             } else if (response.status === 400) {
-                showNotification('Mind giving your details another quick look? Something seems off.', 'error');
+                showNotification('Could not send your application. Please check your e-mail address!', 'error');
             } else if (response.status === 500) {
                 showNotification('Our servers are taking a coffee break. Mind trying again later?', 'error');
             } else {
@@ -113,9 +101,6 @@ import Head from '../components/Head.astro';
         const notificationDiv = document.getElementById('notification');
         notificationDiv.textContent = message;
         notificationDiv.style.display = 'block';
-        setTimeout(() => {
-            notificationDiv.style.display = 'none';
-        }, 3000);
     }
 });
     </script>
@@ -240,7 +225,11 @@ import Head from '../components/Head.astro';
     <p>
         Apply for an interview and secure your spot in the private Discord community of pioneering agency founders.
     </p>
-        <form class="signup-form">
+        <div id="notification">
+
+        </div>
+
+        <form id="signup-form" class="signup-form">
             <input type="text" id="name" placeholder="Your first name e.g. John" required />
             <input type="email" id="email" placeholder="Your E-Mail address e.g. jd@mydomain.com" required />
 
